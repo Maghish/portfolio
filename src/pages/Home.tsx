@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 
 function Home() {
   const [hovering, setHovering] = useState<null | boolean>(null);
+  
   const manageHover = (e: any) => {
     setHovering(e.target.id);
   };
