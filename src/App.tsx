@@ -11,6 +11,7 @@ function App() {
         src={BackgroundImage}
         alt="background-img"
         className="object-cover w-full h-full"
+        loading="lazy"
       ></img>
     </div>
   );
