@@ -1,4 +1,15 @@
-function CommandBox() {
+import { useRef, useState } from "react";
+
+function CommandBox(props: any) {
+  const inputRef = useRef<null | any>(null);
+  const [inputValue, setInputValue] = useState<string>("");
+
+  const handleEnterKeyPress = (e: any) => {
+    if (e.key === "Enter") {
+      props.onEnterPressed(inputRef.current.value);
+    }
+  };
+
   return (
     <>
       <div className="flex flex-row">
@@ -15,8 +26,11 @@ function CommandBox() {
         <input
           type="text"
           className="bg-inherit outline-none w-full h-full ml-2 font-semibold text-[#DCDFE4] caret-[#DCDFE4] font-consolas placeholder:text-[#92959a] placeholder:font-consolas placeholder:font-semibold"
-          placeholder="run help to access all available commands"
+          placeholder="enter 'help' to access all available commands"
           autoFocus
+          ref={inputRef}
+          onChange={(e) => setInputValue(e.target.value)}
+          onKeyPress={handleEnterKeyPress}
         ></input>
       </div>
     </>
