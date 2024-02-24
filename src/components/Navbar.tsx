@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 
 function Navbar() {
   return (
-    <div className="bg-[#272727] w-full h-12 z-10 absolute flex flex-row items-center justify-end">
+    <div className="bg-inherit w-full h-12 z-10 absolute flex flex-row items-center justify-end">
       <IconContext.Provider
         value={{
           color: "#D6D6D6",
