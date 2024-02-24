@@ -1,15 +1,23 @@
+import {
+  VscChromeMinimize,
+  VscChromeMaximize,
+  VscChromeClose,
+} from "react-icons/vsc";
+import { IconContext } from "react-icons";
+
 function Navbar() {
   return (
-    <div className="w-full h-16 bg-black flex items-center">
-      <p className="text-stone-200 font-robotoCondensed cursor-pointer ml-7 mr-4">
-        About
-      </p>
-      <p className="text-stone-200 font-robotoCondensed cursor-pointer mr-4">
-        Contact
-      </p>
-      <p className="text-stone-200 font-robotoCondensed cursor-pointer mr-4">
-        Services
-      </p>
+    <div className="bg-[#272727] w-full h-12 z-10 absolute flex flex-row items-center justify-end">
+      <IconContext.Provider
+        value={{
+          color: "#D6D6D6",
+          className: "w-[32px] h-[32px] p-2 mr-4 cursor-pointer",
+        }}
+      >
+        <VscChromeMinimize />
+        <VscChromeMaximize />
+        <VscChromeClose />
+      </IconContext.Provider>
     </div>
   );
 }

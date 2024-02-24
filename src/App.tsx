@@ -1,10 +1,12 @@
 import "./css/index.css";
+import Navbar from "./components/Navbar";
 
 import BackgroundImage from "./assets/Background.png";
 
 function App() {
   return (
-    <div className="h-screen w-full">
+    <div className="min-h-screen h-screen w-full">
+      <Navbar />
       <img
         src={BackgroundImage}
         alt="background-img"
