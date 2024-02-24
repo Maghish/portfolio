@@ -1,25 +1,18 @@
 import "./css/index.css";
-import { useRoutes } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-import Home from "./pages/Home";
+import BackgroundImage from "./assets/Background.png";
 
 function App() {
-  let routes = useRoutes([
-    {
-      path: "/",
-      children: [
-        {
-          index: true,
-          element: <Home />,
-        },
-      ],
-    },
-  ]);
-
   return (
-    <>
-      <div className="w-full min-h-screen">{routes}</div>
-    </>
+    <div className="min-h-screen h-screen w-full">
+      <Navbar />
+      <img
+        src={BackgroundImage}
+        alt="background-img"
+        className="object-cover w-full h-full"
+      ></img>
+    </div>
   );
 }
 
