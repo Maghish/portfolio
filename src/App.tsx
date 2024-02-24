@@ -1,5 +1,7 @@
 import "./css/index.css";
+
 import Navbar from "./components/Navbar";
+import Body from "./components/Body";
 
 import BackgroundImage from "./assets/Background.png";
 
@@ -13,6 +15,7 @@ function App() {
         className="object-cover w-full h-full"
         loading="lazy"
       ></img>
+      <Body />
     </div>
   );
 }
