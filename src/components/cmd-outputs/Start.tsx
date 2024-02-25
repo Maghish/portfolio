@@ -1,7 +1,7 @@
 function Start() {
   return (
     <div>
-      <p className="font-consolas text-[#DCDFE4]">Starting....</p>
+      <p className="font-consolas text-[#DCDFE4] font-semibold">Starting....</p>
     </div>
   );
 }
