@@ -6,7 +6,7 @@ interface CommandAsProp {
 
 interface CommandBoxProps {
   onEnterPressed: Function | any;
-  ID?: string;
+  REF?: React.MutableRefObject<any>;
 }
 
 export { CommandAsProp, CommandBoxProps };

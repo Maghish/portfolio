@@ -3,52 +3,31 @@ import CommandBox from "./CommandBox";
 
 import DecideCommandOutput from "./DecideCommandOutput";
 
-//  The clear terminal mechanism is a PAIN but it works now so better not ruin anything
-
 function Body() {
   const [allInputedCommands, setAllInputedCommands] = useState<string[]>([]);
-  const [allInputOutputFields, setAllInputOutputFields] = useState<any[]>([]);
-  const bodyRef = useRef<any>(null);
+  const firstInputRef = useRef<any>(null);
 
-  useEffect(() => {
-    const commandInputFields = bodyRef.current.querySelectorAll(
-      ".command-input-field"
-    );
-    const commandOutputFields = bodyRef.current.querySelectorAll(
-      ".command-output-field"
-    );
-    setAllInputOutputFields([...allInputOutputFields, ...commandOutputFields]);
-  }, [bodyRef]);
-
-  const clearTerminal = (ID: string) => {
-    allInputOutputFields.forEach((element) => {
-      if (element.id.toString() === ID) {
-      } else {
-        element.remove();
-      }
-    });
-    setAllInputOutputFields([]);
+  const clearTerminal = () => {
     setAllInputedCommands([]);
-    bodyRef.current.getElementByID("none");
+    firstInputRef.current.querySelector("input").value = "";
+    firstInputRef.current.querySelector("input").placeholder = "";
+    firstInputRef.current.querySelector("input").focus();
   };
 
   return (
-    <div
-      className="absolute w-full h-full max-w-full overflow-auto top-0 bottom-0 pt-14 p-4 pb-6"
-      ref={bodyRef}
-    >
+    <div className="absolute w-full h-full max-w-full overflow-auto top-0 bottom-0 pt-14 p-4 pb-6">
       <CommandBox
+        REF={firstInputRef}
         onEnterPressed={(value: string) => {
           setAllInputedCommands([...allInputedCommands, value]);
         }}
       />
       {allInputedCommands.map((value: string, index: number) => {
         if (value.startsWith("clear") && value.trimEnd().endsWith("clear")) {
-          clearTerminal("10");
+          clearTerminal();
           return (
             <div key={index}>
               <CommandBox
-                ID={"10"}
                 onEnterPressed={(value: string) => {
                   setAllInputedCommands([...allInputedCommands, value]);
                 }}
