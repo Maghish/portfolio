@@ -8,7 +8,7 @@ function DecideCommandOutput({ command }: CommandAsProp) {
   } else {
     return (
       <div className="command-output-field">
-        <p className="font-consolas text-[#DCDFE4] font-semibold">
+        <p className="font-consolas text-[#DCDFE4] font-extrabold">
           bash: {command}: command not found
         </p>
       </div>
