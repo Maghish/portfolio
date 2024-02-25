@@ -6,7 +6,7 @@ function DecideCommandOutput({ command }: CommandAsProp) {
   if (command.startsWith("start") && command.endsWith("start")) {
     return <Start />;
   } else {
-    console.log(command);
+    return <p>BROOO</p>;
   }
 }
 

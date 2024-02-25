@@ -11,7 +11,7 @@ function CommandBox(props: any) {
   };
 
   return (
-    <div className="mb-5">
+    <div className="mb-[12px]">
       <div className="flex flex-row">
         <p className="font-consolas font-semibold text-[#98C379]">
           maghi@DESKTOP-H4T750N
