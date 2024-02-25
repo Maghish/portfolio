@@ -11,7 +11,7 @@ function CommandBox(props: any) {
   };
 
   return (
-    <>
+    <div className="mb-5">
       <div className="flex flex-row">
         <p className="font-consolas font-semibold text-[#98C379]">
           maghi@DESKTOP-H4T750N
@@ -26,14 +26,14 @@ function CommandBox(props: any) {
         <input
           type="text"
           className="bg-inherit outline-none w-full h-full ml-2 font-semibold text-[#DCDFE4] caret-[#DCDFE4] font-consolas placeholder:text-[#92959a] placeholder:font-consolas placeholder:font-semibold"
-          placeholder="enter 'help' to access all available commands"
+          placeholder="enter 'start' to start"
           autoFocus
           ref={inputRef}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyPress={handleEnterKeyPress}
         ></input>
       </div>
-    </>
+    </div>
   );
 }
 
