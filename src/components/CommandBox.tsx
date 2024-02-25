@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
+import { CommandBoxProps } from "../vite-env";
 
-function CommandBox(props: any) {
+function CommandBox(props: CommandBoxProps) {
   const inputRef = useRef<null | any>(null);
   const [inputValue, setInputValue] = useState<string>("");
+  const [idExists, setIdExists] = useState(props.ID ? true : false);
 
   const handleEnterKeyPress = (e: any) => {
     if (e.key === "Enter") {
@@ -11,7 +13,10 @@ function CommandBox(props: any) {
   };
 
   return (
-    <div className="mb-[12px]">
+    <div
+      className="mb-[12px] command-input-field"
+      id={idExists ? props.ID : "none"}
+    >
       <div className="flex flex-row">
         <p className="font-consolas font-semibold text-[#98C379]">
           maghi@DESKTOP-H4T750N

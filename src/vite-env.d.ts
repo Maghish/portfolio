@@ -4,4 +4,9 @@ interface CommandAsProp {
   command: string;
 }
 
-export { CommandAsProp };
+interface CommandBoxProps {
+  onEnterPressed: Function | any;
+  ID?: string;
+}
+
+export { CommandAsProp, CommandBoxProps };
