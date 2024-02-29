@@ -1,61 +1,72 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { InfoNavBarTagComponent } from "../vite-env";
 
-function NavBarTag(props: InfoNavBarTagComponent) {
+function NavBarTag({
+  name,
+  currentTabShowing,
+  setCurrentTabShowing,
+}: InfoNavBarTagComponent) {
+  const checkCurrentShowingTab = () => {
+    if (currentTabShowing === name) {
+      return true;
+    }
+
+    return false;
+  };
+
   return (
     <div
       className={`${
-        props.tabShowing ? "border-b-4 border-borderContrastGreenColor" : ""
+        checkCurrentShowingTab()
+          ? "border-b-4 border-borderContrastGreenColor"
+          : ""
       } px-[22.150px] pt-[11px]`}
       onClick={() => {
-        props.tabShowing
-          ? props.setTabShowing(false)
-          : props.setTabShowing(true);
+        setCurrentTabShowing(name);
       }}
     >
       <p
         className={`${
-          props.tabShowing
+          checkCurrentShowingTab()
             ? "text-borderContrastGreenColor"
-            : " text-themeWhite"
+            : "text-themeWhite"
         } font-consolas cursor-pointer`}
       >
-        {props.name}
+        {name}
       </p>
     </div>
   );
 }
 
 function InfoNavBar() {
-  const [currentlyShowingTab, setCurrentlyShowingTab] =
-    useState<string>("AboutMe");
+  const [activeTab, setActiveTab] = useState<string>("About Me");
 
   return (
     <>
       <div className="bg-bgThemeLighterGray rounded-br-lg rounded-tl-lg w-[450px] h-[50px] flex flex-row">
         <NavBarTag
           name="About Me"
-          tabShowing={aboutMeShowing}
-          setTabShowing={setAboutMeShowing}
+          currentTabShowing={activeTab}
+          setCurrentTabShowing={setActiveTab}
         />
 
         <NavBarTag
           name="Projects"
-          tabShowing={projectsShowing}
-          setTabShowing={setProjectsShowing}
+          currentTabShowing={activeTab}
+          setCurrentTabShowing={setActiveTab}
         />
 
         <NavBarTag
           name="Contact"
-          tabShowing={contactShowing}
-          setTabShowing={setContactShowing}
+          currentTabShowing={activeTab}
+          setCurrentTabShowing={setActiveTab}
         />
 
         <NavBarTag
           name="Services"
-          tabShowing={servicesShowing}
-          setTabShowing={setServicesShowing}
+          currentTabShowing={activeTab}
+          setCurrentTabShowing={setActiveTab}
         />
       </div>
     </>

@@ -2,8 +2,8 @@
 
 interface InfoNavBarTagComponent {
   name: string;
-  currentTabShowing: boolean;
-  setCurrentTabShowing: React.Dispatch<React.SetStateAction<boolean>>;
+  currentTabShowing: string;
+  setCurrentTabShowing: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export { InfoNavBarTagComponent };
