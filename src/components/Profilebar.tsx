@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 
 function Profilebar() {
   return (
-    <div className="bg-[#353638] p-5 h-auto max-w-[400px] max-h-screen flex flex-col items-center">
+    <div className="bg-[#353638] p-5 h-auto max-w-[400px] max-h-screen flex flex-col items-center border-2 border-[#a1ffef29]">
       <p className="text-[#DCDFE4] font-consolas text-xl font-bold mb-2">
         Hello, I'm Maghish
       </p>
