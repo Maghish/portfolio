@@ -21,7 +21,7 @@ function NavBarTag({
         checkCurrentShowingTab()
           ? "border-b-4 border-borderContrastGreenColor"
           : ""
-      } px-[22.150px] pt-[11px]`}
+      } ${name === "Services" ? "rounded-br-lg" : ""} px-[22.150px] pt-[11px]`}
       onClick={() => {
         setCurrentTabShowing(name);
       }}
