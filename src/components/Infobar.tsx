@@ -1,7 +1,47 @@
+import { useState } from "react";
+
 function Infobar() {
+  const [aboutMeShowing, setAboutMeShowing] = useState<boolean>(true);
+  const [projectsShowing, setProjectsShowing] = useState<boolean>(false);
+  const [contactShowing, setContactShowing] = useState<boolean>(false);
+  const [servicesShowing, setServicesShowing] = useState<boolean>(false);
+
   return (
-    <div className="bg-bgThemeGray p-5 h-auto w-full max-w-[700px] max-h-screen border-y-2 border-l-2 border-[#a1ffef29] relative">
-      <div className="absolute w-20 h-20"></div>
+    <div className="bg-bgThemeGray h-auto w-full max-w-[700px] max-h-screen border-y-2 border-l-2 border-[#a1ffef29] rounded-l-lg">
+      {/* Navbar */}
+      <div className="bg-bgThemeLighterGray rounded-b-xl w-[450px] h-[50px] flex flex-row">
+        <p
+          className={`${
+            aboutMeShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+          } font-consolas m-auto cursor-pointer`}
+        >
+          About Me
+        </p>
+        <p
+          className={`${
+            projectsShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+          } font-consolas m-auto cursor-pointer`}
+        >
+          Projects
+        </p>
+        <p
+          className={`${
+            contactShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+          } font-consolas m-auto cursor-pointer`}
+        >
+          Contact
+        </p>
+        <p
+          className={`${
+            servicesShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+          } font-consolas m-auto cursor-pointer`}
+        >
+          Services
+        </p>
+      </div>
+
+      {/* Body */}
+      <div></div>
     </div>
   );
 }
