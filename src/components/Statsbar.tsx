@@ -1,6 +1,6 @@
 function Statsbar() {
   return (
-    <div className="bg-bgThemeGray border-y-2 border-r-2 border-[#a1ffef29] max-w-[400px] max-h-screen p-5">
+    <div className="bg-bgThemeGray border-y-2 border-r-2 border-borderDarkerGreenColor max-w-[400px] max-h-screen p-5">
       <p className="text-themeLightGray font-consolas font-semibold">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi nobis id
         rem officiis maxime necessitatibus quasi neque. Quae distinctio fugiat,
