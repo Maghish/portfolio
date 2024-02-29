@@ -1,12 +1,9 @@
 /// <reference types="vite/client" />
 
-interface CommandAsProp {
-  command: string;
+interface InfoNavBarTagComponent {
+  name: string;
+  currentTabShowing: string;
+  setCurrentTabShowing: React.Dispatch<React.SetStateAction<string>>;
 }
 
-interface CommandBoxProps {
-  onEnterPressed: Function | any;
-  REF?: React.MutableRefObject<any>;
-}
-
-export { CommandAsProp, CommandBoxProps };
+export { InfoNavBarTagComponent };
