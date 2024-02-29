@@ -31,7 +31,7 @@ function NavBarTag({
           checkCurrentShowingTab()
             ? "text-borderContrastGreenColor"
             : "text-themeWhite"
-        } font-consolas cursor-pointer`}
+        } font-consolas cursor-pointer transition delay-[15ms] ease-in`}
       >
         {name}
       </p>
