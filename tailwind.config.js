@@ -8,7 +8,9 @@ export default {
         themeLightGray: "#cbcdd2",
         bgThemeGray: "#353638",
         bgThemeLighterGray: "#3d3e40",
-        borderColor: "#a1ffef7e",
+        borderGreenColor: "#a1ffef7e",
+        borderDarkerGreenColor: "#a1ffef29",
+        borderContrastGreenColor: "#a1ffefb9",
       },
       fontFamily: {
         robotoCondensed: ["Roboto Condensed", "sans-serif"],

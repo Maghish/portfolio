@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 
 function Profilebar() {
   return (
-    <div className="bg-bgThemeGray p-5 h-auto max-w-[400px] max-h-screen flex flex-col items-center border-2 border-[#a1ffef29]">
+    <div className="bg-bgThemeGray p-5 h-auto max-w-[400px] max-h-screen flex flex-col items-center border-2 border-borderDarkerGreenColor">
       <p className="text-themeWhite font-consolas text-xl font-bold mb-2">
         Hello, I'm Maghish
       </p>
@@ -12,7 +12,7 @@ function Profilebar() {
         MERN Stack Developer | Full Stack Developer
       </p>
 
-      <div className="bg-bgThemeLighterGray mt-12 p-8 rounded-lg border-borderColor border-2">
+      <div className="bg-bgThemeLighterGray mt-12 p-8 rounded-lg border-borderGreenColor border-2">
         <p className="text-themeLightGray font-consolas text-sm self-start font-semibold">
           I'm a passionate programmer who expertise at a lot of technologies
           related to web development. I offer a few freelance services on web
@@ -27,21 +27,21 @@ function Profilebar() {
 
       {/* Footer */}
       <div className="mt-auto">
-        <button className="bg-bgThemeLighterGray w-14 h-14 rounded-lg border-2 border-borderColor">
+        <button className="bg-bgThemeLighterGray w-14 h-14 rounded-lg border-2 border-borderGreenColor">
           <IconContext.Provider
             value={{ color: "#a1ffef7e", size: "40px", className: "m-auto" }}
           >
             <FaGithub />
           </IconContext.Provider>
         </button>
-        <button className="bg-bgThemeLighterGray w-14 h-14 rounded-lg border-2 border-borderColor ml-5">
+        <button className="bg-bgThemeLighterGray w-14 h-14 rounded-lg border-2 border-borderGreenColor ml-5">
           <IconContext.Provider
             value={{ color: "#a1ffef7e", size: "40px", className: "m-auto" }}
           >
             <FaLinkedin />
           </IconContext.Provider>
         </button>
-        <button className="bg-bgThemeLighterGray w-14 h-14 rounded-lg border-2 border-borderColor ml-5">
+        <button className="bg-bgThemeLighterGray w-14 h-14 rounded-lg border-2 border-borderGreenColor ml-5">
           <IconContext.Provider
             value={{ color: "#a1ffef7e", size: "40px", className: "m-auto" }}
           >

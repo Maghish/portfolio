@@ -7,33 +7,44 @@ function Infobar() {
   const [servicesShowing, setServicesShowing] = useState<boolean>(false);
 
   return (
-    <div className="bg-bgThemeGray h-auto w-full max-w-[700px] max-h-screen border-y-2 border-l-2 border-[#a1ffef29] rounded-l-lg">
+    <div className="bg-bgThemeGray h-auto w-full max-w-[700px] max-h-screen border-y-2 border-l-2 border-borderDarkerGreenColor rounded-l-lg">
       {/* Navbar */}
       <div className="bg-bgThemeLighterGray rounded-b-xl w-[450px] h-[50px] flex flex-row">
         <p
           className={`${
-            aboutMeShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+            aboutMeShowing
+              ? "text-borderContrastGreenColor"
+              : " text-themeWhite"
           } font-consolas m-auto cursor-pointer`}
         >
           About Me
         </p>
+
         <p
           className={`${
-            projectsShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+            projectsShowing
+              ? "text-borderContrastGreenColor"
+              : " text-themeWhite"
           } font-consolas m-auto cursor-pointer`}
         >
           Projects
         </p>
+
         <p
           className={`${
-            contactShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+            contactShowing
+              ? "text-borderContrastGreenColor"
+              : " text-themeWhite"
           } font-consolas m-auto cursor-pointer`}
         >
           Contact
         </p>
+
         <p
           className={`${
-            servicesShowing ? "text-[#a1ffefb9]" : " text-themeWhite"
+            servicesShowing
+              ? "text-borderContrastGreenColor"
+              : " text-themeWhite"
           } font-consolas m-auto cursor-pointer`}
         >
           Services
