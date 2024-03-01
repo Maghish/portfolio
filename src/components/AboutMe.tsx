@@ -11,7 +11,7 @@ function TechStackTag({ name }: TechStackTagComponent) {
 function TechStackSection() {
   return (
     <div className="max-h-full mb-4">
-      <p className="text-themeWhite font-consolas font-semibold">Tech Stack:</p>
+      <p className="text-themeWhite font-consolas font-bold">Tech Stack:</p>
 
       <div className="flex flex-wrap mt-2">
         <TechStackTag name="Python" />
@@ -40,43 +40,56 @@ function TechStackSection() {
 function StrengthsAndWeaknesses() {
   return (
     <div className="max-h-full">
-      <p className="text-themeWhite font-semibold font-consolas">
-        Strengths and Weaknesses
+      <p className="text-themeWhite font-bold font-consolas">
+        Experience & Knowledge
       </p>
-      <p className="text-themeLightGray font-consolas mt-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sed facere
-        cumque necessitatibus sunt, temporibus voluptate ab, optio itaque
-        laborum, quia laudantium quaerat dolores perferendis sequi animi totam
-        reiciendis maiores rerum perspiciatis eveniet aut a. Accusantium odit
-        illo eligendi soluta minus quibusdam. Eveniet molestiae optio, nulla
-        tenetur dolorum similique odio reprehenderit, sapiente recusandae, minus
-        veritatis aspernatur? Assumenda ipsa similique a quidem recusandae quae
-        modi ullam iste fugit facere perferendis saepe quisquam quia, dolorem,
-        reiciendis impedit ab eius sed esse! Cupiditate facere iusto minus eius
-        cumque vitae eum, nisi debitis voluptatem explicabo pariatur unde
-        doloremque est velit? Expedita iusto esse delectus, repudiandae animi
-        molestiae ut explicabo, autem tenetur maiores labore ipsa inventore.
-        Facere consequatur neque, ab, debitis quidem rerum sint veritatis ipsum
-        suscipit architecto eius. Exercitationem sequi, sapiente sed repellendus
-        non voluptatum quas ipsum suscipit impedit nostrum velit quaerat,
-        consequuntur reprehenderit quibusdam amet molestias aut inventore
-        architecto laudantium, delectus laboriosam fugit pariatur odit.
-        Voluptatum ipsum, facere perferendis ea dignissimos quis odit vitae
-        veritatis beatae? Quo iusto quae, repellat esse quisquam voluptatum
-        ullam fugiat praesentium? Provident rerum necessitatibus omnis libero,
-        dolores soluta, quae quo blanditiis iste amet asperiores esse odit
-        mollitia quia voluptatem fugit perferendis aut reprehenderit
-        consectetur, animi molestias quas. Atque maxime in consequuntur sapiente
-        incidunt soluta provident corporis nisi repellendus repellat repudiandae
-        id, ad enim doloribus accusamus expedita impedit corrupti, possimus
-        minima ullam. Hic, consequuntur corrupti, sunt accusamus consequatur
-        placeat animi facere nihil vero nulla molestiae nam iusto temporibus
-        reprehenderit totam, maxime repellat doloribus ab voluptatem iste est et
-        quas! Est sint libero id porro tempore numquam magnam at fugiat
-        assumenda hic ipsam voluptas alias veniam molestias nobis, voluptate
-        enim, quis totam doloribus? Adipisci dolores, inventore laudantium
-        obcaecati quod facere esse? Sed nam eaque praesentium ullam, ad
-        accusamus velit illo eius laborum quos?
+      <p className="text-themeLightGray font-semibold font-consolas mt-2 text-sm">
+        I have done couple of projects with MERN Stack, React.js and Firebase
+        deployment, React.js with TypeScript and Vercel deployment,
+        Single-Page-Application with only HTML and CSS with JavaScript, HTML and
+        CSS with Django as the Back-end, etc. I took and got certified on
+        various courses:
+        <ul className="mt-1 pl-7 list-disc mb-2 text-borderContrastGreenColor">
+          <li>
+            <a className="cursor-pointer underline">
+              CS50's Introduction to Programming with Python
+            </a>
+          </li>
+          <li>
+            <a className="cursor-pointer underline">
+              CS50's Web Programming with Python and JavaScript
+            </a>
+          </li>
+          <li>
+            <a className="cursor-pointer underline">
+              CS50's Introduction to Artificial Intelligence with Python
+            </a>
+          </li>
+          <li>
+            <a className="cursor-pointer underline">
+              Udemy's Build Web Apps with React & Firebase
+            </a>
+          </li>
+          <li>
+            <a className="cursor-pointer underline">
+              Udemy's React, NodeJS, Express & MongoDB - The MERN Fullstack
+              Guide
+            </a>
+          </li>
+        </ul>
+        Hence I'm quite experienced and have solid Knowledge on MERN Stack,
+        React, Python and Django. I may lack experience with production grade
+        projects or SaaS because I never intend to work on those kind of
+        projects, that's why I decided to make a github organization called "
+        <a className="underline text-borderContrastGreenColor cursor-pointer">
+          StarReach Developments
+        </a>
+        " which is an innovative organization where people make ideas into
+        reality. I may be the creator of that organization but I intend to be
+        just a part of that organization because I don't have project or team
+        management skills and I always prefer to work as a team member rather
+        than a team leader. I'm now working on various projects with MERN Stack
+        on that organization to gain more experience and knowledge.
       </p>
     </div>
   );
