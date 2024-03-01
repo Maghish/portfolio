@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { InfoNavBarTagComponent } from "../vite-env";
+import { InfoNavBarTagComponent, InfoBarComponent } from "../vite-env";
 
 function NavBarTag({
   name,
@@ -39,9 +39,7 @@ function NavBarTag({
   );
 }
 
-function InfoNavBar() {
-  const [activeTab, setActiveTab] = useState<string>("About Me");
-
+function InfoNavBar({ activeTab, setActiveTab }: InfoBarComponent) {
   return (
     <>
       <div className="bg-bgThemeLighterGray rounded-br-lg rounded-tl-lg w-[450px] h-[50px] flex flex-row">

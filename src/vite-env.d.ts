@@ -6,4 +6,13 @@ interface InfoNavBarTagComponent {
   setCurrentTabShowing: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export { InfoNavBarTagComponent };
+interface InfoBarComponent {
+  activeTab: string;
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
+}
+
+interface TechStackTagComponent {
+  name: string;
+}
+
+export { InfoNavBarTagComponent, InfoBarComponent, TechStackTagComponent };
