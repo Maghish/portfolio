@@ -42,7 +42,7 @@ function NavBarTag({
 function InfoNavBar({ activeTab, setActiveTab }: InfoBarComponent) {
   return (
     <>
-      <div className="bg-bgThemeLighterGray rounded-br-lg rounded-tl-lg w-[450px] h-[50px] flex flex-row">
+      <div className="bg-bgThemeLighterGray rounded-br-lg rounded-tl-lg w-[450px] min-h-[50px] flex flex-row">
         <NavBarTag
           name="About Me"
           currentTabShowing={activeTab}

@@ -4,7 +4,7 @@ import Statsbar from "./Statsbar";
 
 function Body() {
   return (
-    <div className="flex flex-row w-full min-h-full justify-center">
+    <div className="flex flex-row w-full min-h-[560px] justify-center">
       <Infobar />
       <Profilebar />
       <Statsbar />
