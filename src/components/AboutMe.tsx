@@ -86,7 +86,7 @@ function StrengthsAndWeaknesses() {
         </a>
         " which is an innovative organization where people make ideas into
         reality. I may be the creator of that organization but I intend to be
-        just a part of that organization because I don't have project or team
+        just a member of that organization because I don't have project or team
         management skills and I always prefer to work as a team member rather
         than a team leader. I'm now working on various projects with MERN Stack
         on that organization to gain more experience and knowledge.
