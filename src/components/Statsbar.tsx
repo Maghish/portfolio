@@ -10,7 +10,7 @@ function Statsbar() {
         alt="statsCard"
       ></img>
       <img
-        src="https://streak-stats.demolab.com?user=Maghish&border_radius=2.6&border=A1FFEF7E&background=3536387E&stroke=A1FFEF7E&ring=A1FFEFB9&currStreakNum=CBCDD2&sideNums=CBCDD2&sideLabels=CBCDD2&fire=A1FFEFB9&currStreakLabel=CBCDD2&dates=CBCDD2&excludeDaysLabel=CBCDD2&hide_longest_streak=true"
+        src="https://streak-stats.demolab.com?user=Maghish&border_radius=2.6&border=A1FFEF7E&background=3536387E&stroke=A1FFEF7E&ring=A1FFEFB9&currStreakNum=CBCDD2&sideNums=CBCDD2&sideLabels=CBCDD2&fire=A1FFEFB9&currStreakLabel=CBCDD2&dates=CBCDD2&excludeDaysLabel=CBCDD2&hide_longest_streak=false"
         alt="streakCard"
       ></img>
     </div>
