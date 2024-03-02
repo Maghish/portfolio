@@ -1,9 +1,19 @@
 import { ProjectCardComponent } from "../vite-env";
 import TechStackTag from "./TechStackTag";
 
-function ProjectCard({ name, description, tags }: ProjectCardComponent) {
+function ProjectCard({
+  name,
+  description,
+  tags,
+  projectLink,
+}: ProjectCardComponent) {
   return (
-    <div className="flex flex-col bg-bgThemeLighterGray border-2 border-borderGreenColor rounded-lg w-full h-[200px] py-3 px-6 cursor-pointer">
+    <div
+      className="flex flex-col bg-bgThemeLighterGray border-2 border-borderGreenColor rounded-lg w-full h-[200px] py-3 px-6 cursor-pointer"
+      onClick={() => {
+        window.location.href = projectLink;
+      }}
+    >
       <p className="text-themeWhite font-consolas font-semibold">{name}</p>
       <div className="mt-3 overflow-auto max-h-full scrollBar">
         <p className="text-themeLightGray font-consolas text-sm">
@@ -38,12 +48,14 @@ function Projects() {
           "Vite.js",
           "TypeScript",
         ]}
+        projectLink="https://github.com/StarReach/Pluto"
       />
 
       <ProjectCard
         name="DeliverEase"
         description="DeliverEase is an innovative platform designed to empower delivery partners and foster seamless connections between buyers and sellers without the need for intermediaries. This project belongs to TeamCodeArena Organization and is now discontinued."
         tags={["Django", "Python", "HTML", "CSS", "JavaScript"]}
+        projectLink="https://github.com/TeamCodeArena/DeliverEase"
       />
 
       <ProjectCard
@@ -57,6 +69,7 @@ function Projects() {
           "TailwindCSS",
           "Vite.js",
         ]}
+        projectLink="https://github.com/Maghish/remind-me"
       />
 
       <ProjectCard
@@ -70,18 +83,21 @@ function Projects() {
           "TailwindCSS",
           "Vite.js",
         ]}
+        projectLink="https://github.com/Maghish/Rate-My-Tech-Stack"
       />
 
       <ProjectCard
         name="react-firebase-template"
         description="This is a template for a React App with Firebase integrated and deployed in Firebase. Just clone this repo and you can start your new react app with firebase already integrated and ready to deploy. "
         tags={["React.js", "Vite.js", "TailwindCSS", "Firebase"]}
+        projectLink="https://github.com/Maghish/react-firebase-template"
       />
 
       <ProjectCard
         name="Animetrix"
         description="A Discord Bot inspired by various different anime and with a stunning Duel System."
         tags={["Python", "Discord.py"]}
+        projectLink="https://github.com/Maghish/Animetrix"
       />
     </div>
   );

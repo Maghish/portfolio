@@ -43,27 +43,42 @@ function StrengthsAndWeaknesses() {
         various courses:
         <ul className="mt-1 pl-7 list-disc mb-2 text-borderContrastGreenColor">
           <li>
-            <a className="cursor-pointer underline">
+            <a
+              href="https://certificates.cs50.io/40a16caf-38dc-469f-82b2-0372dc23816b"
+              className="cursor-pointer underline"
+            >
               CS50's Introduction to Programming with Python
             </a>
           </li>
           <li>
-            <a className="cursor-pointer underline">
+            <a
+              href="https://certificates.cs50.io/6d9f19fa-51d6-4bd5-bb89-fc2d4922df95"
+              className="cursor-pointer underline"
+            >
               CS50's Web Programming with Python and JavaScript
             </a>
           </li>
           <li>
-            <a className="cursor-pointer underline">
+            <a
+              href="https://certificates.cs50.io/b46e41f0-27e1-49af-9dc6-722f704e6ba6"
+              className="cursor-pointer underline"
+            >
               CS50's Introduction to Artificial Intelligence with Python
             </a>
           </li>
           <li>
-            <a className="cursor-pointer underline">
+            <a
+              href="https://ude.my/UC-99c4759a-dddc-45f3-89d3-fdf764c66b95/"
+              className="cursor-pointer underline"
+            >
               Udemy's Build Web Apps with React & Firebase
             </a>
           </li>
           <li>
-            <a className="cursor-pointer underline">
+            <a
+              href="https://ude.my/UC-7d2c1160-691d-4595-b111-1394bee7c16f/"
+              className="cursor-pointer underline"
+            >
               Udemy's React, NodeJS, Express & MongoDB - The MERN Fullstack
               Guide
             </a>
@@ -73,7 +88,10 @@ function StrengthsAndWeaknesses() {
         React, Python and Django. I may lack experience with production grade
         projects or SaaS because I never intend to work on those kind of
         projects, that's why I decided to make a github organization called "
-        <a className="underline text-borderContrastGreenColor cursor-pointer">
+        <a
+          href="https://github.com/StarReach"
+          className="underline text-borderContrastGreenColor cursor-pointer"
+        >
           StarReach Developments
         </a>
         " which is an innovative organization where people make ideas into

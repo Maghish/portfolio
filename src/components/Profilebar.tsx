@@ -17,7 +17,10 @@ function Profilebar() {
           I'm a passionate programmer who expertise at a lot of technologies
           related to web development. I offer a few freelance services on web
           development as well! I'm also a part of a github organization called "
-          <a className="underline cursor-pointer text-borderContrastGreenColor">
+          <a
+            href="https://github.com/StarReach"
+            className="underline cursor-pointer text-borderContrastGreenColor"
+          >
             StarReach Developments
           </a>
           " which is an innovative organization making ideas into reality and

@@ -19,6 +19,7 @@ interface ProjectCardComponent {
   name: string;
   description: string;
   tags: string[];
+  projectLink: string;
 }
 
 export {
