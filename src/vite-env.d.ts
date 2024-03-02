@@ -15,4 +15,15 @@ interface TechStackTagComponent {
   name: string;
 }
 
-export { InfoNavBarTagComponent, InfoBarComponent, TechStackTagComponent };
+interface ProjectCardComponent {
+  name: string;
+  description: string;
+  tags: string[];
+}
+
+export {
+  InfoNavBarTagComponent,
+  InfoBarComponent,
+  TechStackTagComponent,
+  ProjectCardComponent,
+};

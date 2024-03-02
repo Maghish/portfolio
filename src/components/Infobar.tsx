@@ -2,12 +2,17 @@ import { useState } from "react";
 
 import InfoNavBar from "./InfoNavBar";
 import AboutMe from "./AboutMe";
+import Projects from "./Projects";
 
 function Infobar() {
   const [activeTab, setActiveTab] = useState<string>("About Me");
   const findActiveTab = () => {
     if (activeTab === "About Me") {
       return <AboutMe />;
+    }
+
+    if (activeTab === "Projects") {
+      return <Projects />;
     }
   };
 
