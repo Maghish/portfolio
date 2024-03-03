@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { InfoNavBarTagComponent, InfoBarComponent } from "../vite-env";
 
 function NavBarTag({
@@ -41,33 +39,31 @@ function NavBarTag({
 
 function InfoNavBar({ activeTab, setActiveTab }: InfoBarComponent) {
   return (
-    <>
-      <div className="bg-bgThemeLighterGray rounded-br-lg rounded-tl-lg w-[450px] min-h-[50px] flex flex-row">
-        <NavBarTag
-          name="About Me"
-          currentTabShowing={activeTab}
-          setCurrentTabShowing={setActiveTab}
-        />
+    <div className="bg-bgThemeLighterGray rounded-br-lg rounded-tl-lg w-[450px] min-h-[50px] flex flex-row">
+      <NavBarTag
+        name="About Me"
+        currentTabShowing={activeTab}
+        setCurrentTabShowing={setActiveTab}
+      />
 
-        <NavBarTag
-          name="Projects"
-          currentTabShowing={activeTab}
-          setCurrentTabShowing={setActiveTab}
-        />
+      <NavBarTag
+        name="Projects"
+        currentTabShowing={activeTab}
+        setCurrentTabShowing={setActiveTab}
+      />
 
-        <NavBarTag
-          name="Contact"
-          currentTabShowing={activeTab}
-          setCurrentTabShowing={setActiveTab}
-        />
+      <NavBarTag
+        name="Contact"
+        currentTabShowing={activeTab}
+        setCurrentTabShowing={setActiveTab}
+      />
 
-        <NavBarTag
-          name="Services"
-          currentTabShowing={activeTab}
-          setCurrentTabShowing={setActiveTab}
-        />
-      </div>
-    </>
+      <NavBarTag
+        name="Services"
+        currentTabShowing={activeTab}
+        setCurrentTabShowing={setActiveTab}
+      />
+    </div>
   );
 }
 

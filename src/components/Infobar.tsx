@@ -17,11 +17,13 @@ function Infobar() {
   };
 
   return (
-    <div className="bg-bgThemeGray h-[560px] max-h-[560px] w-full max-w-[700px] border-y-2 border-l-2 border-borderDarkerGreenColor rounded-l-lg flex flex-col">
+    <div className="bg-bgThemeGray h-[560px] max-h-[560px] w-full max-w-[700px] order-2 xl:order-1 border-y-2 border-l-2 border-borderDarkerGreenColor rounded-l-lg flex flex-col">
       {/* Navbar */}
       <InfoNavBar activeTab={activeTab} setActiveTab={setActiveTab} />
       {/* Body */}
-      <div className="h-[490px] max-h-[490px] p-5 pb-0">{findActiveTab()}</div>
+      <div className="h-[490px] max-h-[490px] p-5 pb-0 order-1 xl:order-2">
+        {findActiveTab()}
+      </div>
     </div>
   );
 }
