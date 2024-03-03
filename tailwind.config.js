@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -16,6 +18,13 @@ export default {
         robotoCondensed: ["Roboto Condensed", "sans-serif"],
         consolas: ["Consolas", "sans-serif"],
       },
+    },
+    screens: {
+      lw: "376px",
+      mdlw: "520px",
+      ...defaultTheme.screens,
+      hxl: "1295px",
+      xxl: "1367px",
     },
   },
   plugins: [],

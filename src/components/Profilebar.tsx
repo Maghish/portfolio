@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 function Profilebar() {
   return (
     <div className="bg-bgThemeGray p-5 h-auto xl:h-[560px] max-w-[700px] xl:max-w-[400px] order-1 xl:order-2 max-h-full flex flex-col items-center border-2 border-borderDarkerGreenColor mb-9 xl:mb-0">
-      <p className="text-themeWhite font-consolas text-xl min-[1367px]:text-2xl font-bold mb-2">
+      <p className="text-themeWhite font-consolas text-xl xxl:text-2xl font-bold mb-2">
         Hello, I'm Maghish
       </p>
 
@@ -12,8 +12,8 @@ function Profilebar() {
         MERN Stack Developer | Full Stack Developer
       </p>
 
-      <div className="bg-bgThemeLighterGray mt-7 min-[1295px]:mt-12 p-4 2xl:p-8 rounded-lg border-borderGreenColor border-2">
-        <p className="text-themeLightGray font-consolas text-[12px] min-[1367px]:text-sm self-start font-semibold">
+      <div className="bg-bgThemeLighterGray mt-7 hxl:mt-12 p-4 2xl:p-8 rounded-lg border-borderGreenColor border-2">
+        <p className="text-themeLightGray font-consolas text-[12px] xxl:text-sm self-start font-semibold">
           I'm a passionate programmer who expertise at a lot of technologies
           related to web development. I offer a few freelance services on web
           development as well! I'm also a part of a github organization called "
@@ -30,7 +30,7 @@ function Profilebar() {
 
       {/* Footer */}
       <div className="mt-12 xl:mt-auto">
-        <button className="bg-bgThemeLighterGray w-12 h-12 min-[1295px]:w-14 min-[1295px]:h-14 rounded-lg border-2 border-borderGreenColor">
+        <button className="bg-bgThemeLighterGray w-12 h-12 hxl:w-14 hxl:h-14 rounded-lg border-2 border-borderGreenColor">
           <IconContext.Provider
             value={{
               color: "#a1ffef7e",
@@ -41,7 +41,7 @@ function Profilebar() {
             <FaGithub />
           </IconContext.Provider>
         </button>
-        <button className="bg-bgThemeLighterGray w-12 h-12 min-[1295px]:w-14 min-[1295px]:h-14 rounded-lg border-2 border-borderGreenColor ml-3 min-[1295px]:ml-5">
+        <button className="bg-bgThemeLighterGray w-12 h-12 hxl:w-14 hxl:h-14 rounded-lg border-2 border-borderGreenColor ml-3 hxl:ml-5">
           <IconContext.Provider
             value={{
               color: "#a1ffef7e",
@@ -52,7 +52,7 @@ function Profilebar() {
             <FaLinkedin />
           </IconContext.Provider>
         </button>
-        <button className="bg-bgThemeLighterGray w-12 h-12 min-[1295px]:w-14 min-[1295px]:h-14 rounded-lg border-2 border-borderGreenColor ml-3 min-[1295px]:ml-5">
+        <button className="bg-bgThemeLighterGray w-12 h-12 hxl:w-14 hxl:h-14 rounded-lg border-2 border-borderGreenColor ml-3 hxl:ml-5">
           <IconContext.Provider
             value={{
               color: "#a1ffef7e",
