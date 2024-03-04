@@ -20,7 +20,7 @@ function NavBarTag({
           ? "border-b-4 border-borderContrastGreenColor"
           : ""
       } ${
-        name === "Services" ? "rounded-br-lg" : ""
+        name === "Services" ? "xl:rounded-br-lg" : ""
       } px-[10px] mdlw:px-[22.150px] pt-[11px]`}
       onClick={() => {
         setCurrentTabShowing(name);
@@ -41,7 +41,7 @@ function NavBarTag({
 
 function InfoNavBar({ activeTab, setActiveTab }: InfoBarComponent) {
   return (
-    <div className="bg-bgThemeLighterGray rounded-tr-lg xl:rounded-br-lg rounded-tl-lg w-full xl:w-[450px] mt-auto xl:mt-0 min-h-[50px] flex flex-row justify-center xl:justify-start order-2 xl:order-1">
+    <div className="bg-bgThemeLighterGray rounded-tr-lg xl:rounded-tr-none xl:rounded-br-lg rounded-tl-lg w-full xl:w-[450px] mt-auto xl:mt-0 min-h-[50px] flex flex-row justify-center xl:justify-start order-2 xl:order-1">
       <NavBarTag
         name="About Me"
         currentTabShowing={activeTab}

@@ -17,7 +17,7 @@ function Infobar() {
   };
 
   return (
-    <div className="bg-bgThemeGray h-[560px] max-h-[560px] w-full max-w-[700px] order-2 xl:order-1 border-y-2 border-l-2 border-borderDarkerGreenColor rounded-l-lg flex flex-col">
+    <div className="bg-bgThemeGray h-[560px] max-h-[560px] w-full max-w-[700px] order-2 xl:order-1 border-y-2 border-l-2 border-r-2 xl:border-r-0 border-borderDarkerGreenColor rounded-l-lg rounded-r-lg xl:rounded-r-none flex flex-col">
       {/* Navbar */}
       <InfoNavBar activeTab={activeTab} setActiveTab={setActiveTab} />
       {/* Body */}
