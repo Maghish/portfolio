@@ -14,6 +14,7 @@ function ContactForm() {
       .then(
         () => {
           console.log("SUCCESS!");
+          window.location.href = "/";
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -42,7 +43,7 @@ function ContactForm() {
       />
       <button
         type="submit"
-        className="bg-borderGreenColor self-center rounded-lg mt-5 p-2 px-4 font-consolas text-bgThemeGray font-semibold flex flex-row justify-center items-center transition delay-100 duration-500 ease-[cubic-bezier(0.71, 0.19, 0, 0.69)] hover:bg-bgThemeLighterGray hover:text-borderContrastGreenColor"
+        className="bg-borderGreenColor self-center rounded-lg mt-5 p-2 px-4 font-consolas text-bgThemeGray font-semibold flex flex-row justify-center items-center transition delay-100 duration-500 ease-[cubic-bezier(0.71, 0.19, 0, 0.69)] hover:bg-bgThemeLighterGray hover:text-borderContrastGreenColor focus:bg-borderGreenColor focus:text-bgThemeGray"
         onClick={sendEmail}
       >
         Send Message
