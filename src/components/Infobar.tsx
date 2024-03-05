@@ -4,6 +4,7 @@ import InfoNavBar from "./InfoNavBar";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Services from "./Services";
 
 function Infobar() {
   const [activeTab, setActiveTab] = useState<string>("About Me");
@@ -18,6 +19,10 @@ function Infobar() {
 
     if (activeTab === "Contact") {
       return <Contact />;
+    }
+
+    if (activeTab === "Services") {
+      return <Services />;
     }
   };
 
