@@ -16,6 +16,7 @@ function TechStackSection() {
         <TechStackTag name="TypeScript" />
         <TechStackTag name="Firebase" />
         <TechStackTag name="Vite.js" />
+        <TechStackTag name="Next.js" />
         <TechStackTag name="TailwindCSS" />
         <TechStackTag name="HTML" />
         <TechStackTag name="CSS" />

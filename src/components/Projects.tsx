@@ -38,17 +38,16 @@ function Projects() {
     <div className="overflow-y-scroll scrollBar pl-2 max-h-full grid grid-cols-1 gap-6">
       <ProjectCard
         name="Pluto"
-        description="Pluto is a chat-app in which you can create hubs and chat in them. This project is the first project of StarReach Developments so it's not completed yet."
+        description="Pluto is a web application that lets users to create clouds and invite their friends to chat together, a cloud is temporary and users can earn perks like permanent clouds, etc based on their activity on this platform."
         tags={[
-          "MongoDB",
-          "Express.js",
-          "React.js",
-          "Node.js",
+          "Next.js",
           "TailwindCSS",
-          "Vite.js",
           "TypeScript",
+          "Express.js",
+          "Node.js",
+          "MongoDB",
         ]}
-        projectLink="https://github.com/StarReach/Pluto"
+        projectLink="https://github.com/StarReach/Pluto-Web"
       />
 
       <ProjectCard
@@ -56,6 +55,13 @@ function Projects() {
         description="DeliverEase is an innovative platform designed to empower delivery partners and foster seamless connections between buyers and sellers without the need for intermediaries. This project belongs to TeamCodeArena Organization and is now discontinued."
         tags={["Django", "Python", "HTML", "CSS", "JavaScript"]}
         projectLink="https://github.com/TeamCodeArena/DeliverEase"
+      />
+
+      <ProjectCard
+        name="Animetrix"
+        description="Animetrix is a discord bot inspired by the real world game Pokemon TCG (Trading Card Game)"
+        tags={["Node.js", "Discord.js", "MongoDB"]}
+        projectLink="https://github.com/StarReach/Animetrix"
       />
 
       <ProjectCard
@@ -73,17 +79,17 @@ function Projects() {
       />
 
       <ProjectCard
-        name="Rate My Tech Stack"
-        description="Rate-My-Tech-Stack is a web application in which you can build a tech stack and get it's overall ratings. "
+        name="Read Web"
+        description="Read Web is a web application inspired by the famous online novel website, WebNovel."
         tags={[
-          "MongoDB",
-          "Express.js",
           "React.js",
-          "Node.js",
           "TailwindCSS",
           "Vite.js",
+          "Express.js",
+          "Node.js",
+          "MongoDB",
         ]}
-        projectLink="https://github.com/Maghish/Rate-My-Tech-Stack"
+        projectLink="https://github.com/Maghish/ReadWeb"
       />
 
       <ProjectCard
@@ -91,13 +97,6 @@ function Projects() {
         description="This is a template for a React App with Firebase integrated and deployed in Firebase. Just clone this repo and you can start your new react app with firebase already integrated and ready to deploy. "
         tags={["React.js", "Vite.js", "TailwindCSS", "Firebase"]}
         projectLink="https://github.com/Maghish/react-firebase-template"
-      />
-
-      <ProjectCard
-        name="Animetrix"
-        description="A Discord Bot inspired by various different anime and with a stunning Duel System."
-        tags={["Python", "Discord.py"]}
-        projectLink="https://github.com/Maghish/Animetrix"
       />
     </div>
   );
