@@ -23,7 +23,7 @@ function Profilebar() {
           >
             StarReach Developments
           </a>
-          " where I work with my team to build various applications.  
+          " where I work with my team to build various applications.
         </p>
       </div>
 
@@ -37,7 +37,9 @@ function Profilebar() {
               className: "m-auto",
             }}
           >
-            <FaGithub />
+            <a href="https://github.com/Maghish">
+              <FaGithub />
+            </a>
           </IconContext.Provider>
         </button>
         <button className="bg-bgThemeLighterGray w-12 h-12 hxl:w-14 hxl:h-14 rounded-lg border-2 border-borderGreenColor ml-3 hxl:ml-5">
@@ -48,7 +50,9 @@ function Profilebar() {
               className: "m-auto",
             }}
           >
-            <FaLinkedin />
+            <a href="www.linkedin.com/in/maghish-m-56b533290">
+              <FaLinkedin />
+            </a>
           </IconContext.Provider>
         </button>
         <button className="bg-bgThemeLighterGray w-12 h-12 hxl:w-14 hxl:h-14 rounded-lg border-2 border-borderGreenColor ml-3 hxl:ml-5">
