@@ -23,8 +23,7 @@ function Profilebar() {
           >
             StarReach Developments
           </a>
-          " which is an innovative organization making ideas into reality and
-          I'm glad to be a part of them.
+          " where I work with my team to build various applications.  
         </p>
       </div>
 
