@@ -88,19 +88,22 @@ function StrengthsAndWeaknesses() {
         Hence I'm quite experienced and have solid Knowledge on MERN Stack,
         React, Python and Django. I may lack experience with production grade
         projects or SaaS because I never intend to work on those kind of
-        projects, that's why I decided to make a github organization called "
+        projects, that's why I decided to create a github organization called
+        <span> </span>
         <a
           href="https://github.com/StarReach"
-          className="underline text-borderContrastGreenColor cursor-pointer"
+          className="text-borderContrastGreenColor cursor-pointer hover:underline"
         >
           StarReach Developments
         </a>
-        " which is an innovative organization where people make ideas into
-        reality. I may be the creator of that organization but I intend to be
-        just a member of that organization because I don't have project or team
-        management skills and I always prefer to work as a team member rather
-        than a team leader. I'm now working on various projects with MERN Stack
-        on that organization to gain more experience and knowledge.
+        <span> </span>
+        which is an innovative organization where people make ideas into
+        reality. Our first project is called <span> </span>
+        <a href="https://github.com/StarReach/Pluto-Web" className="text-borderContrastGreenColor cursor-pointer hover:underline">
+          Pluto
+        </a>
+        <span>, </span>
+        Which is more like a social media web application we decided to work on. The another project we are working on, along with this project is <span> </span> <a href="https://github.com/StarReach/Animetrix" className="text-borderContrastGreenColor cursor-pointer hover:underline">Animetrix</a> <span> </span> which is a discord bot inspired by the real world card game Pokemon TCG (Trading Card Game). 
       </p>
     </div>
   );
