@@ -59,7 +59,7 @@ function Projects() {
 
       <ProjectCard
         name="Animetrix"
-        description="Animetrix is a discord bot inspired by the real world game Pokemon TCG (Trading Card Game)"
+        description="Animetrix is a discord bot inspired by the real world game Pokemon TCG (Trading Card Game)."
         tags={["Node.js", "Discord.js", "MongoDB"]}
         projectLink="https://github.com/StarReach/Animetrix"
       />
@@ -93,8 +93,29 @@ function Projects() {
       />
 
       <ProjectCard
+        name="Anidon"
+        description="Anidon is a platform where people can easily download and watch anime ad-free!"
+        tags={["Next.js", "TailwindCSS"]}
+        projectLink="https://github.com/Nanotechpikachu/Anidon"
+      />
+
+      <ProjectCard
+        name="Seekject"
+        description="Seekject is an amazing platform where people can easily explore github projects."
+        tags={[
+          "React.js",
+          "TailwindCSS",
+          "Vite.js",
+          "Express.js",
+          "Node.js",
+          "MongoDB",
+        ]}
+        projectLink="https://github.com/StarReach/Seekject"
+      />
+
+      <ProjectCard
         name="react-firebase-template"
-        description="This is a template for a React App with Firebase integrated and deployed in Firebase. Just clone this repo and you can start your new react app with firebase already integrated and ready to deploy. "
+        description="This is a template for a React App with Firebase integrated and deployed in Firebase. Just clone this repo and you can start your new react app with firebase already integrated and ready to deploy."
         tags={["React.js", "Vite.js", "TailwindCSS", "Firebase"]}
         projectLink="https://github.com/Maghish/react-firebase-template"
       />
