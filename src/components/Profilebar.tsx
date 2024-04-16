@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 
 function Profilebar() {
   return (
-    <div className="bg-bgThemeGray p-5 h-auto xl:h-[560px] max-w-[700px] xl:max-w-[400px] order-1 xl:order-2 max-h-full flex flex-col items-center border-2 border-borderDarkerGreenColor mb-9 xl:mb-0">
+    <div className="bg-bgThemeGray p-5 h-auto xl:h-[560px] max-w-[700px] xl:max-w-[400px] order-1 xl:order-2 max-h-full flex flex-col items-center border-2 border-borderDarkerGreenColor mb-9 xl:mb-0 rounded-lg xl:rounded-none">
       <p className="text-themeWhite font-consolas text-xl xxl:text-2xl font-bold mb-2">
         Hello, I'm Maghish
       </p>

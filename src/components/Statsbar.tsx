@@ -1,6 +1,6 @@
 function Statsbar() {
   return (
-    <div className="bg-bgThemeGray border-y-2 border-r-2 border-borderDarkerGreenColor order-3 max-w-[400px] h-[560px] max-h-[560px] p-5 hidden xl:flex xl:flex-col xl:flex-shrink-0">
+    <div className="bg-bgThemeGray border-y-2 border-r-2 border-borderDarkerGreenColor order-3 max-w-[400px] h-[560px] max-h-[560px] p-5 hidden xl:flex xl:flex-col xl:flex-shrink-0 xl:rounded-tr-lg xl:rounded-br-lg">
       <img
         className="flex-shrink-0 mb-auto"
         src="https://github-readme-activity-graph.vercel.app/graph?username=Maghish&height=600&bg_color=353638&color=cbcdd2&line=a1ffef7e&point=a1ffefb9&border_color=a1ffef7e&area=true&hide_border=false"
