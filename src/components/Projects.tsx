@@ -93,23 +93,9 @@ function Projects() {
       />
 
       <ProjectCard
-        name="Anidon"
-        description="Anidon is a platform where people can easily download and watch anime ad-free!"
-        tags={["Next.js", "TailwindCSS"]}
-        projectLink="https://github.com/Nanotechpikachu/Anidon"
-      />
-
-      <ProjectCard
-        name="Seekject"
-        description="Seekject is an amazing platform where people can easily explore github projects."
-        tags={[
-          "React.js",
-          "TailwindCSS",
-          "Vite.js",
-          "Express.js",
-          "Node.js",
-          "MongoDB",
-        ]}
+        name="RAGE"
+        description="RAGE is a data management strategy that emphasizes a seamless and responsive user experience. It uses local data storage to transmit information fast, even in offline conditions. This decreases reliance on network requests, which leads to faster loading times and less data usage. "
+        tags={["Node.js", "TypeScript", "MongoDB"]}
         projectLink="https://github.com/StarReach/Seekject"
       />
 
