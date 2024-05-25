@@ -96,7 +96,7 @@ function Projects() {
         name="RAGE"
         description="RAGE is a data management strategy that emphasizes a seamless and responsive user experience. It uses local data storage to transmit information fast, even in offline conditions. This decreases reliance on network requests, which leads to faster loading times and less data usage. "
         tags={["Node.js", "TypeScript", "MongoDB"]}
-        projectLink="https://github.com/StarReach/Seekject"
+        projectLink="https://github.com/Maghish/RAGE"
       />
 
       <ProjectCard
