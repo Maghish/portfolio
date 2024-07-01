@@ -99,11 +99,14 @@ function StrengthsAndWeaknesses() {
         <span> </span>
         which is an innovative organization where people make ideas into
         reality. Our first project is called <span> </span>
-        <a href="https://github.com/StarReach/Pluto-Web" className="text-borderContrastGreenColor cursor-pointer hover:underline">
+        <a
+          href="https://github.com/StarReach/Pluto-Web"
+          className="text-borderContrastGreenColor cursor-pointer hover:underline"
+        >
           Pluto
         </a>
         <span>, </span>
-        Which is more like a social media web application we decided to work on. The another project we are working on, along with this project is <span> </span> <a href="https://github.com/StarReach/Animetrix" className="text-borderContrastGreenColor cursor-pointer hover:underline">Animetrix</a> <span> </span> which is a discord bot inspired by the real world card game Pokemon TCG (Trading Card Game). 
+        Which is more like a social media web application we decided to work on.
       </p>
     </div>
   );

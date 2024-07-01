@@ -58,13 +58,6 @@ function Projects() {
       />
 
       <ProjectCard
-        name="Animetrix"
-        description="Animetrix is a discord bot inspired by the real world game Pokemon TCG (Trading Card Game)."
-        tags={["Node.js", "Discord.js", "MongoDB"]}
-        projectLink="https://github.com/StarReach/Animetrix"
-      />
-
-      <ProjectCard
         name="Remind Me"
         description="Remind Me is a simple web application in which you can create and manage tasks."
         tags={[
@@ -79,22 +72,8 @@ function Projects() {
       />
 
       <ProjectCard
-        name="Read Web"
-        description="Read Web is a web application inspired by the famous online novel website, WebNovel."
-        tags={[
-          "React.js",
-          "TailwindCSS",
-          "Vite.js",
-          "Express.js",
-          "Node.js",
-          "MongoDB",
-        ]}
-        projectLink="https://github.com/Maghish/ReadWeb"
-      />
-
-      <ProjectCard
         name="RAGE"
-        description="RAGE is a data management strategy that emphasizes a seamless and responsive user experience. It uses local data storage to transmit information fast, even in offline conditions. This decreases reliance on network requests, which leads to faster loading times and less data usage. "
+        description="RAGE is a data management approach that prioritizes a smooth and responsive user experience. It leverages local data storage to deliver information quickly, even in offline scenarios. This reduces reliance on network requests, resulting in faster loading times and lower data usage."
         tags={["Node.js", "TypeScript", "MongoDB"]}
         projectLink="https://github.com/Maghish/RAGE"
       />
