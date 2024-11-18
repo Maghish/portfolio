@@ -1,11 +1,12 @@
+import LeftBar from "./components/LeftBar";
+import RightBar from "./components/RightBar";
 import "./css/index.css";
-
-import Body from "./components/Body";
 
 function App() {
   return (
-    <div className="min-h-screen h-screen w-full pt-12 p-6 md:p-auto md:pt-24 md:pb-12 lg:p-24">
-      <Body />
+    <div className="min-h-screen h-screen min-w-full bg-background px-[40px] xl:px-[80px] py-[40px] flex flex-col xl:flex-row gap-[60px] justify-center items-center">
+      <LeftBar />
+      <RightBar />
     </div>
   );
 }

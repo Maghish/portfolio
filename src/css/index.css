@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.scrollBar::-webkit-scrollbar {
+/* .scrollBar::-webkit-scrollbar {
   width: 7px;
 }
 
@@ -15,4 +15,4 @@
 .scrollBar::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 5px;
-}
+} */
