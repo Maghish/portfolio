@@ -2,17 +2,27 @@ import TagsBox from "./TagsBox";
 import {
   FaLocationDot,
   FaClockRotateLeft,
-  FaSquareInstagram,
   FaInstagram,
-  FaX,
   FaXTwitter,
   FaGithub,
   FaLinkedin,
   FaDiscord,
 } from "react-icons/fa6";
 import { FaSignature } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 export default function LeftBar() {
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+    handleResize(); // Set initial size
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="flex flex-col bg-barBackground h-[40.82%] w-full lg:h-full lg:w-[40.82%] rounded-3xl px-6 py-8 overflow-auto lg:overflow-hidden">
       <h2 className="text-2xl text-primaryColor w-full text-center font-inter font-bold tracking-wide">
@@ -35,14 +45,14 @@ export default function LeftBar() {
             <FaClockRotateLeft size={15} /> 2 years
           </span>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-[7px] sm:gap-[10px] max-w-[120px] sm:max-w-[160px] h-full">
+        <div className="flex flex-wrap items-center justify-center gap-x-[5px] gap-y-[5px] sm:gap-x-[10px] sm:gap-y-[10px] max-w-[120px] sm:max-w-[160px] h-full">
           {/* I know I should have turned this into components, but meh */}
           <a href="https://www.instagram.com/qsp_real/">
             <button className="bg-accentColor size-8 sm:size-10 rounded-lg">
               <FaInstagram
                 className="m-auto"
                 color="#FFFFFF"
-                size={window.innerWidth < 640 ? 20 : 30}
+                size={screenSize < 640 ? 20 : 30}
               />
             </button>
           </a>
@@ -51,7 +61,7 @@ export default function LeftBar() {
               <FaXTwitter
                 className="m-auto"
                 color="#FFFFFF"
-                size={window.innerWidth < 640 ? 20 : 30}
+                size={screenSize < 640 ? 20 : 30}
               />
             </button>
           </a>
@@ -60,7 +70,7 @@ export default function LeftBar() {
               <FaGithub
                 className="m-auto"
                 color="#FFFFFF"
-                size={window.innerWidth < 640 ? 20 : 30}
+                size={screenSize < 640 ? 20 : 30}
               />
             </button>
           </a>
@@ -69,7 +79,7 @@ export default function LeftBar() {
               <FaLinkedin
                 className="m-auto"
                 color="#FFFFFF"
-                size={window.innerWidth < 640 ? 20 : 30}
+                size={screenSize < 640 ? 20 : 30}
               />
             </button>
           </a>
@@ -78,7 +88,7 @@ export default function LeftBar() {
               <FaDiscord
                 className="m-auto"
                 color="#FFFFFF"
-                size={window.innerWidth < 640 ? 20 : 30}
+                size={screenSize < 640 ? 20 : 30}
               />
             </button>
           </a>
