@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         robotoCondensed: ["Roboto Condensed", "sans-serif"],
         consolas: ["Consolas", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
     screens: {
