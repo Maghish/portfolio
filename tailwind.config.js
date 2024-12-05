@@ -5,7 +5,9 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        navbarBg: "#141414",
+      },
       fontFamily: {
         robotoCondensed: ["Roboto Condensed", "sans-serif"],
         consolas: ["Consolas", "sans-serif"],
