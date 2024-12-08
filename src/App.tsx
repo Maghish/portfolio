@@ -2,6 +2,7 @@ import "./css/index.css";
 import Navbar from "./components/Navbar";
 import MainText from "./components/MainText";
 import AboutMe from "./components/AboutMe";
+import BottomBar from "./components/BottomBar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <MainText />
       <AboutMe />
+      <BottomBar />
     </div>
   );
 }
