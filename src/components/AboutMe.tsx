@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function AboutMe() {
@@ -8,13 +9,38 @@ export default function AboutMe() {
     deleteSpeed: 40,
   });
 
+  const [imageSize, setImageSize] = useState({ width: 400, height: 400 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      let newWidth, newHeight;
+
+      if (windowWidth <= 768) {
+        // Adjust breakpoint as needed
+        newWidth = 300;
+        newHeight = 300;
+      } else {
+        newWidth = 400;
+        newHeight = 400;
+      }
+      setImageSize({ width: newWidth, height: newHeight });
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial size calculation
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="w-full h-[calc(100vh-200px)] flex flex-col items-center py-8 px-20 border-b-white border-opacity-10 border-b-4">
-      <h2 className="font-inter-extrabold text-2xl text-white">About Me</h2>
-      <div className="mt-20 inline-flex flex-row">
-        <p className="text-white font-inter-medium text-md w-full">
+    <div className="w-full h-[calc(100vh-50px)] flex flex-col items-center py-8 px-20 border-b-white border-opacity-10 border-b-4">
+      <h2 className="mt-20 font-inter-extrabold text-2xl text-white">
+        About Me
+      </h2>
+      <div className="mt-20 inline-flex flex-col md:flex-row items-center md:items-start">
+        <p className="text-white font-inter-medium text-sm md:text-md w-full">
           A 15 year old{" "}
-          <span className="text-md font-inter-bold bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 text-transparent bg-clip-text">
+          <span className="font-inter-bold bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 text-transparent bg-clip-text">
             {text}
           </span>
           <span className="ml-[-3px]">
@@ -26,7 +52,7 @@ export default function AboutMe() {
           frameworks everyday! I'm quite a learner you can say, I love to adopt
           to new technologies every often!
         </p>
-        <div className="flex flex-wrap ml-10 justify-around w-full sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2">
+        <div className="flex flex-wrap mt-10 md:mt-0 ml-0 md:ml-10 justify-around w-full sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2">
           <div className="w-max h-max rounded-lg bg-[#191919] cursor-pointer flex items-center justify-center">
             <img
               src={
@@ -34,8 +60,8 @@ export default function AboutMe() {
               }
               alt="tech-stack-icon"
               className="m-auto object-fill"
-              width={400}
-              height={400}
+              width={imageSize.width}
+              height={imageSize.height}
             />
           </div>
         </div>
