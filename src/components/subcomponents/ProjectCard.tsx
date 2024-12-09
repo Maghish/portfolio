@@ -12,8 +12,10 @@ export default function ProjectCard({
   projectTags: string[];
 }) {
   return (
-    <div className="bg-[#191919] px-[40px] py-[35px] rounded-xl cursor-pointer flex flex-col gap-y-[20px]">
-      <h4 className="font-inter-bold text-white text-lg">{projectName}</h4>
+    <div className="bg-[#191919] px-[25px] md:px-[40px] py-[35px] rounded-xl cursor-pointer flex flex-col gap-y-[20px]">
+      <h4 className="font-inter-bold text-white text-lg text-center md:text-start">
+        {projectName}
+      </h4>
       <p className="font-inter-regular text-white text-sm">
         {projectDescription}
       </p>

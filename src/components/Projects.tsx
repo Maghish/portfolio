@@ -6,7 +6,7 @@ export default function Projects() {
       <h2 className="mt-20 font-inter-extrabold text-2xl text-white">
         Projects
       </h2>
-      <div className="mt-10 flex flex-col gap-y-[20px] w-full md:w-3/4 px-[10px] md:px-[35px] py-[35px] max-h-[645px] overflow-y-auto">
+      <div className="mt-10 flex flex-col gap-y-[20px] w-full md:w-3/4 lg:w-2/4 px-[10px] md:px-[35px] py-[35px] max-h-[645px] overflow-y-auto">
         <ProjectCard
           projectName="Pluto"
           projectDescription="Pluto is a web application that lets users to create clouds and invite  their friends to chat together, a cloud is temporary and users can earn  perks like permanent clouds, etc based on their activity on this  platform."
