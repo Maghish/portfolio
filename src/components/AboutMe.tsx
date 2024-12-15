@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import TechStackTag from "./subcomponents/TechStackTag";
 
 export default function AboutMe() {
   const [text] = useTypewriter({
@@ -50,18 +51,25 @@ export default function AboutMe() {
           frameworks everyday! I'm quite a learner you can say, I love to adopt
           to new technologies every often!
         </p>
-        <div className="flex flex-wrap mt-10 md:mt-0 ml-0 md:ml-10 justify-around w-full sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2">
-          <div className="w-max h-max rounded-lg bg-[#191919] cursor-pointer flex items-center justify-center">
-            <img
-              src={
-                "https://skillicons.dev/icons?i=mongodb,express,react,nodejs,nextjs,tailwind,ts,js,django,html,css,python,firebase,mysql,postgres,sqlite,prisma,vite,figma,graphql,vercel,md,neovim,vscode,git,npm,docker,discordjs&theme=dark&perline=7"
-              }
-              alt="tech-stack-icon"
-              className="m-auto object-fill"
-              width={imageSize.width}
-              height={imageSize.height}
-            />
-          </div>
+        <div className="flex flex-wrap mt-10 md:mt-0 ml-0 md:ml-10 justify-center w-full sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2">
+          <TechStackTag name="React" />
+          <TechStackTag name="Next.js" />
+          <TechStackTag name="Tailwind CSS" />
+          <TechStackTag name="TypeScript" />
+          <TechStackTag name="Node.js" />
+          <TechStackTag name="Express.js" />
+          <TechStackTag name="MongoDB" />
+          <TechStackTag name="JavaScript" />
+          <TechStackTag name="Python" />
+          <TechStackTag name="Django" />
+          <TechStackTag name="Discord.js" />
+          <TechStackTag name="SQLite" />
+          <TechStackTag name="MySQL" />
+          <TechStackTag name="PostgreSQL" />
+          <TechStackTag name="HTML" />
+          <TechStackTag name="CSS" />
+          <TechStackTag name="Docker" />
+          <TechStackTag name="Linux" />
         </div>
       </div>
     </div>

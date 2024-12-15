@@ -5,12 +5,11 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "tech-stack-tag-shadow": "0px 1px 3px 3px rgba(139 92 246 / 1.0)",
+      },
       colors: {
         navbarBg: "#141414",
-      },
-      fontFamily: {
-        robotoCondensed: ["Roboto Condensed", "sans-serif"],
-        consolas: ["Consolas", "sans-serif"],
       },
     },
     screens: {
