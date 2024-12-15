@@ -33,10 +33,8 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div className="w-full h-[calc(100vh-50px)] flex flex-col items-center py-8 px-20 border-b-white border-opacity-10 border-b-4">
-      <h2 className="mt-20 font-inter-extrabold text-2xl text-white">
-        About Me
-      </h2>
+    <div className="w-full h-max flex flex-col items-center py-8 px-20">
+      <h2 className="font-inter-extrabold text-2xl text-white">About Me</h2>
       <div className="mt-20 inline-flex flex-col md:flex-row items-center md:items-start">
         <p className="text-white font-inter-medium text-sm md:text-md w-full">
           A 15 year old{" "}

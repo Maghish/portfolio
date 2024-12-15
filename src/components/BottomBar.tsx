@@ -1,6 +1,6 @@
 export default function BottomBar() {
   return (
-    <div className="bg-[#0E0E0E] w-full h-[220px] justify-self-end mt-auto p-10 flex flex-row justify-around gap-x-20">
+    <div className="bg-[#0E0E0E] w-full absolute bottom-0 left-0 h-[220px] justify-self-end p-10 flex flex-row justify-around gap-x-20">
       <div className="flex flex-col">
         <p className="text-white font-inter-bold justify-self-start">
           Also reach out for me on:{" "}

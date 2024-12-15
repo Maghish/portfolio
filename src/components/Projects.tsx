@@ -2,10 +2,8 @@ import ProjectCard from "./subcomponents/ProjectCard";
 
 export default function Projects() {
   return (
-    <div className="w-full h-screen flex flex-col items-center py-8 px-5 md:px-20 border-b-white border-opacity-10 border-b-4">
-      <h2 className="mt-20 font-inter-extrabold text-2xl text-white">
-        Projects
-      </h2>
+    <div className="w-full h-screen flex flex-col items-center py-8 px-5 md:px-20">
+      <h2 className="font-inter-extrabold text-2xl text-white">Projects</h2>
       <div className="mt-10 flex flex-col gap-y-[20px] w-full md:w-3/4 lg:w-2/4 px-[10px] md:px-[35px] py-[35px] max-h-[645px] overflow-y-auto">
         <ProjectCard
           projectName="Pluto"

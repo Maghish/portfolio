@@ -9,7 +9,7 @@ export default function MainText() {
   });
 
   return (
-    <div className="relative top-0 left-0 border-b-white border-opacity-10 border-b-4 w-full h-[calc(100vh-100px)] flex flex-col items-center justify-center space-y-1">
+    <div className="relative top-0 left-0 w-full h-[calc(100vh-100px)] flex flex-col items-center justify-center space-y-1">
       <h3 className="text-3xl font-inter-black text-white">
         Hello, I'm Maghish 👋
       </h3>
