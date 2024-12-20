@@ -34,10 +34,10 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div className="w-full h-max flex flex-col items-center py-8 px-20">
+    <div className="w-max max-w-[700px] h-max flex flex-col items-center justify-center py-8 px-8 md:pl-20">
       <h2 className="font-inter-extrabold text-2xl text-white">About Me</h2>
-      <div className="mt-20 inline-flex flex-col md:flex-row items-center md:items-start">
-        <p className="text-white font-inter-medium text-sm md:text-md w-full">
+      <div className="mt-20 inline-flex flex-col items-start justify-content-center">
+        <p className="text-white font-inter-medium text-sm md:text-md">
           A 15 year old{" "}
           <span className="font-inter-bold bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 text-transparent bg-clip-text">
             {text}
@@ -51,7 +51,7 @@ export default function AboutMe() {
           frameworks everyday! I'm quite a learner you can say, I love to adopt
           to new technologies every often!
         </p>
-        <div className="flex flex-wrap mt-10 md:mt-0 ml-0 md:ml-10 justify-center w-full sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2">
+        <div className="flex flex-wrap mt-10 ml-0 md:ml-[-10px] justify-center sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2 ">
           <TechStackTag name="React" />
           <TechStackTag name="Next.js" />
           <TechStackTag name="Tailwind CSS" />
