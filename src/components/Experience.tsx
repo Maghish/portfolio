@@ -39,10 +39,16 @@ export default function Experience() {
         }`}
       >
         <div
-          className={`absolute z-0 rounded-md bg-[#686868] transition-all delay-[1100ms] duration-[600ms] ease-linear h-[4px] w-0 ${
+          className={`relative z-0 rounded-md bg-[#686868] transition-all delay-[1100ms] duration-[600ms] ease-linear h-[4px] w-0 ${
             viewing ? "!w-[50px] translate-x-[-50px]" : ""
           }`}
-        />
+        >
+          <div
+            className={`relative left-[-200px] top-[-50px] z-10 rounded-md bg-[#686868] transition-all delay-[1600ms] duration-[200ms] ease-linear h-[100px] w-[200px] ${
+              viewing ? "!opacity-100" : "opacity-0"
+            }`}
+          ></div>
+        </div>
       </div>
       <div
         className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1100ms] ease-out ${
@@ -50,10 +56,16 @@ export default function Experience() {
         }`}
       >
         <div
-          className={`absolute z-0 rounded-md bg-[#686868] transition-all delay-[1100ms] duration-[600ms] ease-linear h-[4px] w-0 ${
-            viewing ? "!w-[50px] translate-x-[-50px]" : ""
+          className={`relative z-0 left-[16px] rounded-md bg-[#686868] transition-all delay-[1100ms] duration-[600ms] ease-linear h-[4px] w-0 ${
+            viewing ? "!w-[50px]" : ""
           }`}
-        />
+        >
+          <div
+            className={`relative right-[-50px] top-[-50px] z-10 rounded-md bg-[#686868] transition-all delay-[1600ms] duration-[200ms] ease-linear h-[100px] w-[200px] ${
+              viewing ? "!opacity-100" : "opacity-0"
+            }`}
+          ></div>
+        </div>
       </div>
 
       <div
@@ -65,7 +77,13 @@ export default function Experience() {
           className={`absolute z-0 rounded-md bg-[#686868] transition-all delay-[1100ms] duration-[600ms] ease-linear h-[4px] w-0 ${
             viewing ? "!w-[50px] translate-x-[-50px]" : ""
           }`}
-        />
+        >
+          <div
+            className={`relative left-[-200px] top-[-50px] z-10 rounded-md bg-[#686868] transition-all delay-[1600ms] duration-[200ms] ease-linear h-[100px] w-[200px] ${
+              viewing ? "!opacity-100" : "opacity-0"
+            }`}
+          ></div>
+        </div>
       </div>
 
       <div
