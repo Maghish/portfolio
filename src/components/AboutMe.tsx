@@ -34,7 +34,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div className="w-max max-w-[700px] h-max flex flex-col items-center justify-center py-8 px-8 md:pl-20">
+    <div className="w-full lg:w-max lg:max-w-[700px] h-max flex flex-col items-center justify-center py-8 px-8 md:pl-20">
       <h2 className="font-inter-extrabold text-2xl text-white">About Me</h2>
       <div className="mt-20 inline-flex flex-col items-start justify-content-center">
         <p className="text-white font-inter-medium text-sm md:text-md">
