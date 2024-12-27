@@ -1,124 +1,77 @@
-import TechStackTag from "./TechStackTag";
+import { useEffect, useState } from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import TechStackTag from "./subcomponents/TechStackTag";
 
-function TechStackSection() {
+export default function AboutMe() {
+  const [text] = useTypewriter({
+    words: ["Passionate", "Self-Taught", "Student"],
+    loop: true,
+    typeSpeed: 40,
+    deleteSpeed: 40,
+  });
+
+  const [imageSize, setImageSize] = useState({ width: 400, height: 400 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      let newWidth, newHeight;
+
+      if (windowWidth <= 768) {
+        // Adjust breakpoint as needed
+        newWidth = 300;
+        newHeight = 300;
+      } else {
+        newWidth = 400;
+        newHeight = 400;
+      }
+      setImageSize({ width: newWidth, height: newHeight });
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial size calculation
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="max-h-full mb-4">
-      <p className="text-themeWhite font-consolas font-bold">Tech Stack:</p>
-
-      <div className="flex flex-wrap mt-2">
-        <TechStackTag name="Python" />
-        <TechStackTag name="Django" />
-        <TechStackTag name="MongoDB" />
-        <TechStackTag name="Express.js" />
-        <TechStackTag name="React.js" />
-        <TechStackTag name="Node.js" />
-        <TechStackTag name="JavaScript" />
-        <TechStackTag name="TypeScript" />
-        <TechStackTag name="Firebase" />
-        <TechStackTag name="Vite.js" />
-        <TechStackTag name="Next.js" />
-        <TechStackTag name="TailwindCSS" />
-        <TechStackTag name="HTML" />
-        <TechStackTag name="CSS" />
-        <TechStackTag name="GraphQL" />
-        <TechStackTag name="Vercel" />
-        <TechStackTag name="Markdown" />
-        <TechStackTag name="Git" />
-        <TechStackTag name="Docker" />
+    <div className="w-full lg:w-max lg:max-w-[700px] h-max flex flex-col items-center justify-center py-8 px-8 md:pl-20">
+      <h2 className="font-inter-extrabold text-2xl text-white">About Me</h2>
+      <div className="mt-20 inline-flex flex-col items-start justify-content-center">
+        <p className="text-white font-inter-medium text-sm md:text-md">
+          A 15 year old{" "}
+          <span className="font-inter-bold bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 text-transparent bg-clip-text">
+            {text}
+          </span>
+          <span className="ml-[-3px]">
+            <Cursor cursorBlinking={false} />
+          </span>{" "}
+          Programmer from India, Who has 2 years of experience on coding. I'm an
+          expert at Discord Bot Development to be honest :D I also create web
+          apps with React, Next.js and I'm willing to build web apps with new
+          frameworks everyday! I'm quite a learner you can say, I love to adopt
+          to new technologies every often!
+        </p>
+        <div className="flex flex-wrap mt-10 ml-0 md:ml-[-10px] justify-center sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2 ">
+          <TechStackTag name="React" />
+          <TechStackTag name="Next.js" />
+          <TechStackTag name="Tailwind CSS" />
+          <TechStackTag name="TypeScript" />
+          <TechStackTag name="Node.js" />
+          <TechStackTag name="Express.js" />
+          <TechStackTag name="MongoDB" />
+          <TechStackTag name="JavaScript" />
+          <TechStackTag name="Python" />
+          <TechStackTag name="Django" />
+          <TechStackTag name="Discord.js" />
+          <TechStackTag name="SQLite" />
+          <TechStackTag name="MySQL" />
+          <TechStackTag name="PostgreSQL" />
+          <TechStackTag name="HTML" />
+          <TechStackTag name="CSS" />
+          <TechStackTag name="Docker" />
+          <TechStackTag name="Linux" />
+        </div>
       </div>
     </div>
   );
 }
-
-function StrengthsAndWeaknesses() {
-  return (
-    <div className="max-h-full">
-      <p className="text-themeWhite font-bold font-consolas">
-        Experience & Knowledge
-      </p>
-      <p className="text-themeLightGray font-semibold font-consolas mt-2 text-sm">
-        I have done couple of projects with MERN Stack, React.js and Firebase
-        deployment, React.js with TypeScript and Vercel deployment,
-        Single-Page-Application with only HTML and CSS with JavaScript, HTML and
-        CSS with Django as the Back-end, etc. I took and got certified on
-        various courses:
-        <ul className="mt-1 pl-7 list-disc mb-2 text-borderContrastGreenColor">
-          <li>
-            <a
-              href="https://certificates.cs50.io/40a16caf-38dc-469f-82b2-0372dc23816b"
-              className="cursor-pointer underline"
-            >
-              CS50's Introduction to Programming with Python
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://certificates.cs50.io/6d9f19fa-51d6-4bd5-bb89-fc2d4922df95"
-              className="cursor-pointer underline"
-            >
-              CS50's Web Programming with Python and JavaScript
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://certificates.cs50.io/b46e41f0-27e1-49af-9dc6-722f704e6ba6"
-              className="cursor-pointer underline"
-            >
-              CS50's Introduction to Artificial Intelligence with Python
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://ude.my/UC-99c4759a-dddc-45f3-89d3-fdf764c66b95/"
-              className="cursor-pointer underline"
-            >
-              Udemy's Build Web Apps with React & Firebase
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://ude.my/UC-7d2c1160-691d-4595-b111-1394bee7c16f/"
-              className="cursor-pointer underline"
-            >
-              Udemy's React, NodeJS, Express & MongoDB - The MERN Fullstack
-              Guide
-            </a>
-          </li>
-        </ul>
-        Hence I'm quite experienced and have solid Knowledge on MERN Stack,
-        React, Python and Django. I may lack experience with production grade
-        projects or SaaS because I never intend to work on those kind of
-        projects, that's why I decided to create a github organization called
-        <span> </span>
-        <a
-          href="https://github.com/StarReach"
-          className="text-borderContrastGreenColor cursor-pointer hover:underline"
-        >
-          StarReach Developments
-        </a>
-        <span> </span>
-        which is an innovative organization where people make ideas into
-        reality. Our first project is called <span> </span>
-        <a
-          href="https://github.com/StarReach/Pluto-Web"
-          className="text-borderContrastGreenColor cursor-pointer hover:underline"
-        >
-          Pluto
-        </a>
-        <span>, </span>
-        Which is more like a social media web application we decided to work on.
-      </p>
-    </div>
-  );
-}
-
-function AboutMe() {
-  return (
-    <div className="overflow-y-scroll scrollBar pl-2 max-h-full">
-      <TechStackSection />
-      <StrengthsAndWeaknesses />
-    </div>
-  );
-}
-
-export default AboutMe;
