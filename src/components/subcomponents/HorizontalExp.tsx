@@ -35,24 +35,24 @@ export default function HorizontalExp() {
       className="relative flex lg:hidden flex-row w-full min-h-[200px] max-h-[200px] pt-5 items-center justify-start"
     >
       <div className="flex flex-row w-full min-h-100% items-center justify-evenly">
-        <div className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
+        <button className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75">
             Click to view!
             <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
           </div>
-        </div>
-        <div className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
+        </button>
+        <button className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75">
             Click to view!
             <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
           </div>
-        </div>
-        <div className="relative z-10 rounded-full w-4 h-4 bg-[#8B4CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
+        </button>
+        <button className="relative z-10 rounded-full w-4 h-4 bg-[#8B4CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75">
             Click to view!
             <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
           </div>
-        </div>
+        </button>
       </div>
 
       <div
