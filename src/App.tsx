@@ -59,6 +59,14 @@ function App() {
           startDate={expModalData.startDate}
           endDate={expModalData.endDate}
           techstacks={expModalData.techstacks}
+          setModalActive={(value: {
+            name: string;
+            description: string;
+            startDate: string;
+            endDate: string;
+            techstacks: string[];
+            modalActive: boolean;
+          }) => setExpModalData(value)}
         />
       )}
     </div>
