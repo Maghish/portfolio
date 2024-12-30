@@ -32,9 +32,7 @@ export default function ExperienceModal({
             {startDate} - {endDate}
           </p>
         </div>
-
         <p className="text-center text-white text-base">{description}</p>
-
         <div className="flex flex-wrap gap-x-2 gap-y-2 items-center justify-center">
           {techstacks.map((value, index) => (
             <TechStackTag name={value} key={index} />
