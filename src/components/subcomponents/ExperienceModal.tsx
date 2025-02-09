@@ -24,8 +24,8 @@ export default function ExperienceModal({
   }) => void;
 }) {
   return (
-    <div className="absolute top-0 left-0 min-w-full min-h-full overflow-auto bg-white bg-opacity-15 backdrop-blur-lg flex justify-center items-center">
-      <div className="relative bg-black rounded-lg w-[350px] h-[350px] border-white border-2 px-6 py-8 flex flex-col items-center justify-between">
+    <div className="absolute top-0 left-0 min-w-full min-h-full overflow-auto bg-white bg-opacity-5 backdrop-blur-lg flex justify-center items-center animate-fade-in-scale">
+      <div className="relative bg-black bg-opacity-50 backdrop-blur-xl rounded-lg w-[350px] h-[350px] border-white border-opacity-30 border-2 px-6 py-8 flex flex-col items-center justify-between shadow-exp-modal-shadow">
         <div className="flex flex-col items-center justify-center gap-y-2">
           <h2 className="text-center text-xl font-bold text-white">{name}</h2>
           <p className="text-center text-xs text-white">
