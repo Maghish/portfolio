@@ -51,7 +51,7 @@ export default function AboutMe() {
           frameworks everyday! I'm quite a learner you can say, I love to adopt
           to new technologies every often!
         </p>
-        <div className="flex flex-wrap mt-10 ml-0 md:ml-[-10px] justify-center sm:gap-x-2 gap-x-1 gap-y-1 sm:gap-y-2 ">
+        <div className="flex flex-wrap mt-10 ml-0 md:ml-[-10px] justify-center gap-x-2 gap-y-2">
           <TechStackTag name="React" />
           <TechStackTag name="Next.js" />
           <TechStackTag name="Tailwind CSS" />
