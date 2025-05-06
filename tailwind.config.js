@@ -7,7 +7,7 @@ export default {
     extend: {
       boxShadow: {
         "tech-stack-tag-shadow": "0px 1px 3px 3px rgba(139 92 246 / 1.0)",
-        "exp-modal-shadow": "0px 0px 20px 20px rgba(255 255 255/ 0.15)",
+        // "exp-modal-shadow": "0px 0px 20px 0px rgba(255 255 255/ 0.15)",
       },
       colors: {
         navbarBg: "#141414",
