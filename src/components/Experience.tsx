@@ -19,7 +19,7 @@ export default function Experience({
   return (
     <>
       <HorizontalExp setExpModalData={(data: any) => setExpModalData(data)} />
-      <VerticalExp />
+      <VerticalExp setExpModalData={(data: any) => setExpModalData(data)} />
     </>
   );
 }
