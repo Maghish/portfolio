@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 z-50 bg-[#FFFFFF] bg-opacity-10 backdrop-blur-xl w-full h-[50px] flex flex-row items-center justify-center space-x-10">
+    <div className="fixed top-0 left-0 z-50 bg-[#000000] bg-opacity-45 backdrop-blur-xl w-full h-[50px] flex flex-row items-center justify-center space-x-10">
       <div className="relative inline-block group">
         <span className="relative z-10 cursor-pointer text-white font-inter-bold transition duration-300 ease-in-out group-hover:text-black">
           About Me

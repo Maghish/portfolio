@@ -39,7 +39,7 @@ export default function VerticalExp({
       className="relative hidden lg:flex w-full min-h-[500px] max-h-[600px] justify-center pt-16 items-end"
     >
       <button
-        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1000ms] ease-out ${
+        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1000ms] ease-out hover:scale-110 ${
           viewing ? `translate-y-[-500px]` : ""
         } group`}
         onClick={() =>
@@ -60,13 +60,13 @@ export default function VerticalExp({
           })
         }
       >
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-100">
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-100 font-inter-bold">
           Click to view!
           <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700 scale-125" />
         </div>
       </button>
       <button
-        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1100ms] ease-out ${
+        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1100ms] ease-out hover:scale-110 ${
           viewing ? `translate-y-[-400px]` : ""
         } group`}
         onClick={() =>
@@ -87,13 +87,13 @@ export default function VerticalExp({
           })
         }
       >
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-100">
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-100 font-inter-bold">
           Click to view!
           <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700 scale-125" />
         </div>
       </button>
       <button
-        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1200ms] ease-out ${
+        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1200ms] ease-out hover:scale-110 ${
           viewing ? `translate-y-[-300px]` : ""
         } group`}
         onClick={() =>
@@ -114,7 +114,7 @@ export default function VerticalExp({
           })
         }
       >
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-100">
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-100 font-inter-bold">
           Click to view!
           <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700 scale-125" />
         </div>
