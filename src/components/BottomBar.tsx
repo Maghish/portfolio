@@ -7,16 +7,17 @@ export default function BottomBar() {
         </p>
         <ul className="mt-4 space-y-0.5">
           <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
-            Discord
+            <a href="https://discordapp.com/users/978672079291449424">
+              Discord
+            </a>
           </li>
           <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
-            LinkedIn
+            <a href="https://www.linkedin.com/in/maghish-m-56b533290/">
+              LinkedIn
+            </a>
           </li>
           <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
-            Github
-          </li>
-          <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
-            Instagram
+            <a href="https://github.com/Maghish">Github</a>
           </li>
         </ul>
       </div>
