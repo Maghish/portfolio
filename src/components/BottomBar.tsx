@@ -6,17 +6,17 @@ export default function BottomBar() {
           Also reach out for me on:{" "}
         </p>
         <ul className="mt-4 space-y-0.5">
-          <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
+          <li className="text-primaryColor font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
             <a href="https://discordapp.com/users/978672079291449424">
               Discord
             </a>
           </li>
-          <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
+          <li className="text-primaryColor font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
             <a href="https://www.linkedin.com/in/maghish-m-56b533290/">
               LinkedIn
             </a>
           </li>
-          <li className="text-blue-700 font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
+          <li className="text-primaryColor font-inter-regular cursor-pointer hover:underline hover:underline-offset-4">
             <a href="https://github.com/Maghish">Github</a>
           </li>
         </ul>
