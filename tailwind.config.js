@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         navbarBg: "#141414",
+        primaryColor: "#8b5cf6",
       },
       keyframes: {
         fadeInScale: {

@@ -31,7 +31,7 @@ function App() {
     <div className="w-screen min-h-screen h-full flex flex-col overflow-clip overflow-y-auto overflow-x-hidden">
       {/* Navbar, MainText, About Me, Projects, Bottom Bar */}
       <Navbar />
-      <Parallax pages={2.3}>
+      <Parallax pages={3.5}>
         <ParallaxLayer offset={0} speed={1}>
           <MainText />
         </ParallaxLayer>
@@ -41,14 +41,13 @@ function App() {
             <Experience setExpModalData={setExpModalData} />
           </div>
         </ParallaxLayer>
-        {/* <ParallaxLayer
-          offset={1.5}
+        <ParallaxLayer
+          offset={1.9}
           // factor={3}
           speed={0.2}
-          onClick={() => handleScrollTo(1.4)}
         >
           <Projects />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
 
         <BottomBar />
       </Parallax>
