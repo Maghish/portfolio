@@ -31,7 +31,7 @@ function App() {
     <div className="w-screen min-h-screen h-full flex flex-col overflow-clip overflow-y-auto overflow-x-hidden">
       {/* Navbar, MainText, About Me, Projects, Bottom Bar */}
       <Navbar />
-      <Parallax pages={3.5}>
+      <Parallax pages={3.8}>
         <ParallaxLayer offset={0} speed={1}>
           <MainText />
         </ParallaxLayer>
@@ -42,7 +42,7 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={1.9}
+          offset={2.1}
           // factor={3}
           speed={0.2}
         >
