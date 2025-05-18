@@ -39,9 +39,9 @@ export default function VerticalExp({
       className="relative hidden lg:flex w-full min-h-[500px] max-h-[600px] justify-center pt-16 items-end"
     >
       <button
-        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1000ms] ease-out hover:scale-110 ${
+        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-primaryColor transition-all duration-[1000ms] ease-out hover:scale-110 ${
           viewing ? `translate-y-[-500px]` : ""
-        } group`}
+        } group hover:shadow-exp-btn-shadow`}
         onClick={() =>
           setExpModalData({
             name: "Legend Bot",
@@ -66,9 +66,9 @@ export default function VerticalExp({
         </div>
       </button>
       <button
-        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1100ms] ease-out hover:scale-110 ${
+        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-primaryColor transition-all duration-[1100ms] ease-out hover:scale-110 ${
           viewing ? `translate-y-[-400px]` : ""
-        } group`}
+        } group hover:shadow-exp-btn-shadow`}
         onClick={() =>
           setExpModalData({
             name: "Legend Bot",
@@ -93,9 +93,9 @@ export default function VerticalExp({
         </div>
       </button>
       <button
-        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-[#8B5CF6] transition-all duration-[1200ms] ease-out hover:scale-110 ${
+        className={`absolute z-10 rounded-full w-4 h-4 inline-flex items-center justify-content-center bg-primaryColor transition-all duration-[1200ms] ease-out hover:scale-110 ${
           viewing ? `translate-y-[-300px]` : ""
-        } group`}
+        } group hover:shadow-exp-btn-shadow`}
         onClick={() =>
           setExpModalData({
             name: "Legend Bot",
@@ -122,7 +122,7 @@ export default function VerticalExp({
 
       <div
         ref={line}
-        className={`absolute left-1/2 -translate-x-1/2 w-[4px] bg-[#686868] transition-all duration-[1000ms] ease-in-out h-[0px] ${
+        className={`absolute left-1/2 -translate-x-1/2 w-[4px] bg-stone-900 transition-all duration-[1000ms] ease-in-out h-[0px] ${
           viewing ? "!h-full" : ""
         }`}
       />

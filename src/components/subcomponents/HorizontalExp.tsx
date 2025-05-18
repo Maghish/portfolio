@@ -40,7 +40,7 @@ export default function HorizontalExp({
     >
       <div className="flex flex-row w-full min-h-100% items-center justify-evenly">
         <button
-          className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group"
+          className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow"
           onClick={() =>
             setExpModalData({
               name: "Legend Bot",
@@ -59,13 +59,13 @@ export default function HorizontalExp({
             })
           }
         >
-          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75">
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75 font-inter-bold">
             Click to view!
             <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
           </div>
         </button>
         <button
-          className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group"
+          className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow"
           onClick={() =>
             setExpModalData({
               name: "Legend Bot",
@@ -85,7 +85,7 @@ export default function HorizontalExp({
           }
         >
           <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75"
+            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75 font-inter-bold"
             onClick={() =>
               setExpModalData({
                 name: "Legend Bot",
@@ -109,7 +109,7 @@ export default function HorizontalExp({
           </div>
         </button>
         <button
-          className="relative z-10 rounded-full w-4 h-4 bg-[#8B4CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group"
+          className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow font-inter-bold"
           onClick={() =>
             setExpModalData({
               name: "Legend Bot",
@@ -137,7 +137,7 @@ export default function HorizontalExp({
 
       <div
         ref={line}
-        className={`absolute  h-[4px] bg-[#686868] transition-all duration-[1000ms] ease-in-out w-[0px] ${
+        className={`absolute h-[4px] bg-stone-900 transition-all duration-[1000ms] ease-in-out w-[0px] ${
           viewing ? "!w-full" : ""
         }`}
       />
