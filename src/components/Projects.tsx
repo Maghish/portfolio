@@ -55,19 +55,15 @@ export default function Projects() {
       {/* Mobile Two Independent Scrollable Rows with Full-Width Cards */}
       <div className="md:hidden relative w-full mt-10 space-y-6">
         {/* Row 1 - even indexed projects */}
-        <div
-          className="overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-          // This padding centers the snapping: half the difference between the viewport width and the container width.
-          style={{
-            paddingLeft: "calc(50vw - 50%)",
-            paddingRight: "calc(50vw - 50%)",
-          }}
-        >
-          <div className="flex gap-14 p-4">
+        <div className="overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden m-auto">
+          <div className="flex p-4 gap-20">
             {projectsData
               .filter((_, index) => index % 2 === 0)
               .map((project, idx) => (
-                <div key={idx} className="flex-shrink-0 w-full snap-center">
+                <div
+                  key={idx}
+                  className="flex-shrink-0 w-full snap-center flex items-center justify-center"
+                >
                   <ProjectCard
                     projectName={project.projectName}
                     projectDescription={project.projectDescription}
@@ -80,18 +76,15 @@ export default function Projects() {
         </div>
 
         {/* Row 2 - odd indexed projects */}
-        <div
-          className="overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-          style={{
-            paddingLeft: "calc(50vw - 50%)",
-            paddingRight: "calc(50vw - 50%)",
-          }}
-        >
-          <div className="flex gap-14 p-4">
+        <div className="overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden m-auto">
+          <div className="flex gap-20 p-4">
             {projectsData
               .filter((_, index) => index % 2 !== 0)
               .map((project, idx) => (
-                <div key={idx} className="flex-shrink-0 w-full snap-center">
+                <div
+                  key={idx}
+                  className="flex-shrink-0 w-full snap-center flex justify-center items-center"
+                >
                   <ProjectCard
                     projectName={project.projectName}
                     projectDescription={project.projectDescription}
