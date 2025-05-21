@@ -68,42 +68,17 @@ export default function HorizontalExp({
           className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow"
           onClick={() =>
             setExpModalData({
-              name: "Legend Bot",
+              name: "Nyaru",
               description:
-                "Legend Bot is a Discord bot that helps you manage your discord server.",
-              startDate: "11/2024",
+                "Nyaru is a multi-purpose discord bot owned by Nyaru Inc. A very good helpful bot to manage your servers!",
+              startDate: "5/2024",
               endDate: "Present",
-              techstacks: [
-                "Discord.js",
-                "JavaScript",
-                "Node.js",
-                "PostgreSQL",
-                "TypeScript",
-              ],
+              techstacks: ["Discord.js", "JavaScript", "Node.js", "MongoDB"],
               modalActive: true,
             })
           }
         >
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75 font-inter-bold"
-            onClick={() =>
-              setExpModalData({
-                name: "Legend Bot",
-                description:
-                  "Legend Bot is a Discord bot that helps you manage your discord server.",
-                startDate: "11/2024",
-                endDate: "Present",
-                techstacks: [
-                  "Discord.js",
-                  "JavaScript",
-                  "Node.js",
-                  "PostgreSQL",
-                  "TypeScript",
-                ],
-                modalActive: true,
-              })
-            }
-          >
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75 font-inter-bold">
             Click to view!
             <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
           </div>
@@ -112,18 +87,12 @@ export default function HorizontalExp({
           className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow font-inter-bold"
           onClick={() =>
             setExpModalData({
-              name: "Legend Bot",
+              name: "DeliverEase",
               description:
-                "Legend Bot is a Discord bot that helps you manage your discord server.",
-              startDate: "11/2024",
-              endDate: "Present",
-              techstacks: [
-                "Discord.js",
-                "JavaScript",
-                "Node.js",
-                "PostgreSQL",
-                "TypeScript",
-              ],
+                "An open-source platform for delivery partners to manage their deliveries and connect with buyers more efficiently. Owned by TeamCodeArena",
+              startDate: "8/2023",
+              endDate: "4/2024",
+              techstacks: ["JavaScript", "Python", "Django", "CSS"],
               modalActive: true,
             })
           }

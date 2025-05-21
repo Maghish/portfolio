@@ -71,18 +71,12 @@ export default function VerticalExp({
         } group hover:shadow-exp-btn-shadow`}
         onClick={() =>
           setExpModalData({
-            name: "Legend Bot",
+            name: "Nyaru",
             description:
-              "Legend Bot is a Discord bot that helps you manage your discord server.",
-            startDate: "11/2024",
+              "Nyaru is a multi-purpose discord bot owned by Nyaru Inc. A very good helpful bot to manage your servers!",
+            startDate: "5/2024",
             endDate: "Present",
-            techstacks: [
-              "Discord.js",
-              "JavaScript",
-              "Node.js",
-              "PostgreSQL",
-              "TypeScript",
-            ],
+            techstacks: ["Discord.js", "JavaScript", "Node.js", "MongoDB"],
             modalActive: true,
           })
         }
@@ -98,18 +92,12 @@ export default function VerticalExp({
         } group hover:shadow-exp-btn-shadow`}
         onClick={() =>
           setExpModalData({
-            name: "Legend Bot",
+            name: "DeliverEase",
             description:
-              "Legend Bot is a Discord bot that helps you manage your discord server.",
-            startDate: "11/2024",
-            endDate: "Present",
-            techstacks: [
-              "Discord.js",
-              "JavaScript",
-              "Node.js",
-              "PostgreSQL",
-              "TypeScript",
-            ],
+              "An open-source platform for delivery partners to manage their deliveries and connect with buyers more efficiently. Owned by TeamCodeArena",
+            startDate: "8/2023",
+            endDate: "4/2024",
+            techstacks: ["JavaScript", "Python", "Django", "CSS"],
             modalActive: true,
           })
         }
