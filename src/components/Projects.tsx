@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ProjectCard from "./subcomponents/ProjectCard";
-import { FaRegSquareCaretRight, FaRegSquareCaretLeft } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 
 const projectsData = [
   {
@@ -48,57 +48,72 @@ const projectsData = [
 ];
 
 export default function Projects() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrevious = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
-  const handleNext = () => {
-    if (currentIndex < projectsData.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
   return (
     <div className="mt-auto mb-0 lg:mb-[260px] relative bottom-0 lg:top-0 left-0 w-full min-h-[calc(100vh*3)] flex flex-col items-center py-8 px-5 md:px-20">
       <h2 className="font-inter-extrabold text-2xl text-white">Projects</h2>
-      {/* Mobile Carousel */}
 
-      {/* Active Card */}
-      <div className="md:hidden relative w-full flex items-center justify-around mt-10 gap-x-auto">
-        {/* Previous Button */}
-        <button
-          onClick={handlePrevious}
-          disabled={currentIndex === 0}
-          className="group relative left-0 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-transparent disabled:opacity-50 transition-transform duration-200 transform hover:scale-105 active:scale-95"
+      {/* Mobile Two Independent Scrollable Rows with Full-Width Cards */}
+      <div className="md:hidden relative w-full mt-10 space-y-6">
+        {/* Row 1 - even indexed projects */}
+        <div
+          className="overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          // This padding centers the snapping: half the difference between the viewport width and the container width.
+          style={{
+            paddingLeft: "calc(50vw - 50%)",
+            paddingRight: "calc(50vw - 50%)",
+          }}
         >
-          <FaRegSquareCaretLeft
-            className="transition-colors duration-300 text-white group-hover:text-primaryColor"
+          <div className="flex gap-14 p-4">
+            {projectsData
+              .filter((_, index) => index % 2 === 0)
+              .map((project, idx) => (
+                <div key={idx} className="flex-shrink-0 w-full snap-center">
+                  <ProjectCard
+                    projectName={project.projectName}
+                    projectDescription={project.projectDescription}
+                    projectLink={project.projectLink}
+                    projectTags={project.projectTags}
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* Row 2 - odd indexed projects */}
+        <div
+          className="overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          style={{
+            paddingLeft: "calc(50vw - 50%)",
+            paddingRight: "calc(50vw - 50%)",
+          }}
+        >
+          <div className="flex gap-14 p-4">
+            {projectsData
+              .filter((_, index) => index % 2 !== 0)
+              .map((project, idx) => (
+                <div key={idx} className="flex-shrink-0 w-full snap-center">
+                  <ProjectCard
+                    projectName={project.projectName}
+                    projectDescription={project.projectDescription}
+                    projectLink={project.projectLink}
+                    projectTags={project.projectTags}
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* Overflow Indicator Icon
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+          <FaChevronRight
+            className="text-white transition-colors duration-300 hover:text-primaryColor"
             size={30}
           />
-        </button>
-        <ProjectCard
-          projectName={projectsData[currentIndex].projectName}
-          projectDescription={projectsData[currentIndex].projectDescription}
-          projectLink={projectsData[currentIndex].projectLink}
-          projectTags={projectsData[currentIndex].projectTags}
-        />
-        {/* Next Button */}
-        <button
-          onClick={handleNext}
-          disabled={currentIndex === projectsData.length - 1}
-          className="group relative left-0 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-transparent disabled:opacity-50 transition-transform duration-200 transform hover:scale-105 active:scale-95"
-        >
-          <FaRegSquareCaretRight
-            className="transition-colors duration-300 text-white group-hover:text-primaryColor"
-            size={25}
-          />
-        </button>
+        </div> */}
       </div>
-      {/* Desktop Grid */}
-      <div className="hidden md:flex mt-10 flex-wrap gap-[20px] w-full px-[10px] md:px-[35px] py-[35px] max-h-[7250px] overflow-y-auto items-center justify-center">
+
+      {/* Desktop Grid remains unchanged */}
+      <div className="hidden md:flex mt-10 flex-wrap gap-[20px] w-full px-[10px] md:px-[35px] py-[35px] max-h-[400px] overflow-y-auto items-center justify-center">
         {projectsData.map((project, index) => (
           <ProjectCard
             key={index}
