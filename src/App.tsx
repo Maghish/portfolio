@@ -1,5 +1,5 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import "./css/index.css";
 import Navbar from "./components/Navbar";
@@ -11,6 +11,7 @@ import Experience from "./components/Experience";
 import ExperienceModal from "./components/subcomponents/ExperienceModal";
 
 function App() {
+  const parallaxRef = useRef<any>(null);
   const [expModalData, setExpModalData] = useState<{
     name: string;
     description: string;
@@ -30,8 +31,8 @@ function App() {
   return (
     <div className="w-screen min-h-screen h-full flex flex-col overflow-clip overflow-y-auto overflow-x-hidden">
       {/* Navbar, MainText, About Me, Projects, Bottom Bar */}
-      <Navbar />
-      <Parallax pages={3.4}>
+      <Navbar parallaxRef={parallaxRef} />
+      <Parallax ref={parallaxRef} pages={3.4}>
         <ParallaxLayer offset={0} speed={1}>
           <MainText />
         </ParallaxLayer>
@@ -49,7 +50,7 @@ function App() {
           <Projects />
         </ParallaxLayer>
 
-        <BottomBar />
+        <BottomBar parallaxRef={parallaxRef} />
       </Parallax>
       {expModalData.modalActive && (
         <ExperienceModal
