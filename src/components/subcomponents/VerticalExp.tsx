@@ -55,6 +55,7 @@ export default function VerticalExp({
               "Node.js",
               "PostgreSQL",
               "TypeScript",
+              "Docker",
             ],
             modalActive: true,
           })

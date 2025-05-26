@@ -54,6 +54,7 @@ export default function HorizontalExp({
                 "Node.js",
                 "PostgreSQL",
                 "TypeScript",
+                "Docker",
               ],
               modalActive: true,
             })
