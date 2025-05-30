@@ -40,7 +40,7 @@ export default function HorizontalExp({
     >
       <div className="flex flex-row w-full min-h-100% items-center justify-evenly">
         <button
-          className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group"
+          className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow"
           onClick={() =>
             setExpModalData({
               name: "Legend Bot",
@@ -54,7 +54,46 @@ export default function HorizontalExp({
                 "Node.js",
                 "PostgreSQL",
                 "TypeScript",
+                "Docker",
               ],
+              modalActive: true,
+            })
+          }
+        >
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75 font-inter-bold">
+            Click to view!
+            <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
+          </div>
+        </button>
+        <button
+          className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow"
+          onClick={() =>
+            setExpModalData({
+              name: "Nyaru",
+              description:
+                "Nyaru is a multi-purpose discord bot owned by Nyaru Inc. A very good helpful bot to manage your servers!",
+              startDate: "5/2024",
+              endDate: "Present",
+              techstacks: ["Discord.js", "JavaScript", "Node.js", "MongoDB"],
+              modalActive: true,
+            })
+          }
+        >
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75 font-inter-bold">
+            Click to view!
+            <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
+          </div>
+        </button>
+        <button
+          className="relative z-10 rounded-full w-4 h-4 bg-primaryColor cursor-pointer transition-all duration-[900ms] hover:scale-150 group hover:shadow-exp-btn-shadow font-inter-bold"
+          onClick={() =>
+            setExpModalData({
+              name: "DeliverEase",
+              description:
+                "An open-source platform for delivery partners to manage their deliveries and connect with buyers more efficiently. Owned by TeamCodeArena",
+              startDate: "8/2023",
+              endDate: "4/2024",
+              techstacks: ["JavaScript", "Python", "Django", "CSS"],
               modalActive: true,
             })
           }
@@ -64,23 +103,11 @@ export default function HorizontalExp({
             <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
           </div>
         </button>
-        <button className="relative z-10 rounded-full w-4 h-4 bg-[#8B5CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
-          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75">
-            Click to view!
-            <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
-          </div>
-        </button>
-        <button className="relative z-10 rounded-full w-4 h-4 bg-[#8B4CF6] cursor-pointer transition-all duration-[150ms] hover:scale-150 group">
-          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-5 w-max p-2 bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 group-hover:!scale-75">
-            Click to view!
-            <FaCaretDown className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 text-gray-700" />
-          </div>
-        </button>
       </div>
 
       <div
         ref={line}
-        className={`absolute  h-[4px] bg-[#686868] transition-all duration-[1000ms] ease-in-out w-[0px] ${
+        className={`absolute h-[4px] bg-stone-900 transition-all duration-[1000ms] ease-in-out w-[0px] ${
           viewing ? "!w-full" : ""
         }`}
       />
